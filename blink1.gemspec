@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.summary     = "Ruby interface for blink(1)"
   s.description = "Controls blink(1)"
 
-  # s.rubyforge_project = "blink1"
+  s.rubyforge_project = "blink1"
 
   s.add_development_dependency  'bundler',     '~> 1.0'
   # s.add_development_dependency  'rspec',       '~> 2.11'
