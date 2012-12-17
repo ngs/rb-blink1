@@ -2,7 +2,7 @@ pkg/*
 *.gem
 *.bundle
 Gemfile.lock
-ext/hid.c
+ext/blink1/hid.c
 
 
 ## MAC OS
@@ -14,7 +14,7 @@ Desktop DB
 Desktop DF
 
 # /bin/fsevent_watch
-/ext/Makefile
+/ext/blink1/Makefile
 
 ## editor/IDE
 .idea

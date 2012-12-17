@@ -13,12 +13,12 @@ Gem::Specification.new do |s|
   s.description = "Controls blink(1)"
 
   s.rubyforge_project = "blink1"
-
   s.add_development_dependency  'bundler',     '~> 1.0'
   # s.add_development_dependency  'rspec',       '~> 2.11'
   # s.add_development_dependency  'guard-rspec', '~> 1.2'
 
-  s.files        = Dir.glob('{lib,ext}/**/*') + %w[LICENSE README.rdoc]
-  s.require_path = 'lib'
+  s.files        = `git ls-files`.split("\n").reject{|f| f =~ /^(\..+|Gemfile.*)$/}
+  s.extensions = ["ext/blink1/extconf.rb"]
+  s.require_paths = ["lib", "ext"]
 end
 
