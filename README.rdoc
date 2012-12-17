@@ -1,1 +1,52 @@
-= blink1.rb
+= rb-blink1
+
+The Ruby interface for blink(1)
+
+== Install
+
+    gem install rb-blink1
+
+== Usage
+
+=== Set RGB
+
+    require 'blink1'
+    
+    blink1 = Blink1.new
+    blink1.open
+    blink1.set_rgb(255, 255, 255)
+    blink1.close
+
+=== Fade to RGB
+
+    require 'blink1'
+    
+    blink1 = Blink1.new
+    blink1.open
+    blink1.set_rgb(0, 0, 0)
+    blink1.fade_to_rgb(100, 255, 255, 255)
+    blink1.close
+
+=== Create and play pattern line
+
+
+    require 'blink1'
+    
+    blink1 = Blink1.new
+    blink1.open
+    blink1.write_pattern_line(100, 255, 255, 255, 0)
+    blink1.write_pattern_line(100, 0,   255, 255, 1)
+    blink1.write_pattern_line(100, 255, 255, 0,   2)
+    blink1.write_pattern_line(100, 255, 0,   255, 3)
+    blink1.write_pattern_line(100, 255, 255, 255, 4)
+    blink1.write_pattern_line(100, 0,   255, 255, 5)
+    blink1.write_pattern_line(100, 255, 255, 0,   6)
+    blink1.write_pattern_line(100, 255, 0,   255, 7)
+    blink1.write_pattern_line(100, 255, 255, 255, 8)
+    blink1.write_pattern_line(100, 0,   255, 255, 9)
+    blink1.write_pattern_line(100, 255, 255, 0,   10)
+    blink1.play(0)
+
+== Author
+
+- {Atsushi Nagase}[http://ngs.io/]
