@@ -89,8 +89,8 @@ void rb_blink1_free(struct Blink1Instance *ins) {
     blink1_close(ins->dev);
     ins->opened = 0;
   }
-  free(ins);
-  // ruby_xfree
+  // free(ins);
+  ruby_xfree(ins);
 }
 
 static VALUE rb_blink1_allocate(VALUE self) {
