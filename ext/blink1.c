@@ -1,6 +1,12 @@
+#include <stdlib.h>
 #include "ruby.h"
 #include "blink1-lib.h"
 #include <stdio.h>
+
+struct Blink1Instance {
+  hid_device *dev;
+  int opened;
+};
 
 static VALUE rb_blink1_vid(VALUE self) {
   return INT2NUM(blink1_vid());
@@ -41,6 +47,20 @@ static VALUE rb_blink1_getCachedSerial(VALUE self, VALUE i) {
 
 static VALUE rb_blink1_getCachedCount(VALUE self) {
   return INT2NUM(blink1_getCachedCount());
+}
+
+void rb_blink1_free(struct Blink1Instance *ins) {
+  if(ins->opened == 1) {
+    blink1_close(ins->dev);
+    ins->opened = 0;
+  }
+  free(ins);
+}
+
+static VALUE rb_blink1_allocate(VALUE self) {
+  struct Blink1Instance *ins = malloc(sizeof(struct Blink1Instance));
+  ins->opened = 0;
+  return Data_Wrap_Struct(self, 0, rb_blink1_free, ins);
 }
 
 
@@ -98,8 +118,8 @@ static VALUE rb_blink1_getCachedCount(VALUE self) {
 void Init_blink1() {
   VALUE module;
   VALUE klass = rb_define_class("Blink1", rb_cObject);
-  rb_define_singleton_method(klass, "vid", rb_blink1_vid, 0);
-  rb_define_singleton_method(klass, "pid", rb_blink1_pid, 0);
+  rb_define_singleton_method(klass, "vendor_id", rb_blink1_vid, 0);
+  rb_define_singleton_method(klass, "product_id", rb_blink1_pid, 0);
   rb_define_singleton_method(klass, "sort_paths", rb_blink1_sortPaths, 0);
   rb_define_singleton_method(klass, "sort_serials", rb_blink1_sortSerials, 0);
   rb_define_singleton_method(klass, "enumerate", rb_blink1_enumerate, 0);
@@ -107,4 +127,6 @@ void Init_blink1() {
   rb_define_singleton_method(klass, "cached_path", rb_blink1_blink1_getCachedPath, 1);
   rb_define_singleton_method(klass, "cached_serial", rb_blink1_getCachedSerial, 1);
   rb_define_singleton_method(klass, "cached_count", rb_blink1_getCachedCount, 0);
+  rb_define_alloc_func(klass, rb_blink1_allocate);
+  
 }
