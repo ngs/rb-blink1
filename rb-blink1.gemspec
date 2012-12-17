@@ -3,12 +3,12 @@ $:.push File.expand_path("../lib", __FILE__)
 require "blink1/version"
 
 Gem::Specification.new do |s|
-  s.name        = "blink1"
+  s.name        = "rb-blink1"
   s.version     = Blink1::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ['Atsushi Nagase']
   s.email       = ['a@ngs.io']
-  s.homepage    = "http://github.com/ngs/blink1.rb"
+  s.homepage    = "http://github.com/ngs/rb-blink1"
   s.summary     = "Ruby interface for blink(1)"
   s.description = "Controls blink(1)"
 
