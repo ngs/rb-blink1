@@ -29,7 +29,6 @@ The Ruby interface for blink(1)
 
 === Create and play pattern line
 
-
     require 'blink1'
     
     blink1 = Blink1.new
@@ -46,6 +45,44 @@ The Ruby interface for blink(1)
     blink1.write_pattern_line(100, 0,   255, 255, 9)
     blink1.write_pattern_line(100, 255, 255, 0,   10)
     blink1.play(0)
+    blink1.close
+
+=== Blink with specified color
+
+    require 'blink1'
+    
+    blink1 = Blink1.new
+    blink1.open
+    blink1.blink(255, 255, 0, 5)
+    blink1.close
+
+=== Random color
+
+    require 'blink1'
+    
+    blink1 = Blink1.new
+    blink1.open
+    blink1.random(25)
+    blink1.close
+
+=== Turn LED on
+
+    require 'blink1'
+    
+    blink1 = Blink1.new
+    blink1.open
+    blink1.on
+    blink1.close
+
+=== Turn LED off
+
+    require 'blink1'
+    
+    blink1 = Blink1.new
+    blink1.open
+    blink1.off
+    blink1.close
+
 
 == Author
 
