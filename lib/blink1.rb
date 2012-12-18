@@ -12,7 +12,7 @@ class Blink1
   end
 
   def blink r, g, b, times
-    1.upto(times) do
+    times.times do
       self.fade_to_rgb(millis, r, g, b)
       self.class.sleep(delay_millis)
       self.fade_to_rgb(millis, 0, 0, 0)
@@ -21,7 +21,7 @@ class Blink1
   end
 
   def random times
-    1.upto(times) do
+    times.times do
       r = rand(0xff)
       g = rand(0xff)
       b = rand(0xff)
