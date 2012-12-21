@@ -38,4 +38,16 @@ class Blink1
     self.fade_to_rgb(millis, 0, 0, 0)
   end
 
+  def [] index
+    self.read_pattern_line(index)
+  end
+
+  def []= index, prop
+    fade_millis = prop[:fade_millis] || prop['fade_millis']
+    r = prop[:r] || prop['r']
+    g = prop[:g] || prop['g']
+    b = prop[:b] || prop['b']
+    self.write_pattern_line(index, fade_millis, r, g, b)
+  end
+
 end
