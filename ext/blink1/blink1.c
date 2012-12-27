@@ -44,8 +44,8 @@ static VALUE rb_blink1_blink1_getCachedPath(VALUE self, VALUE i) {
 
 static VALUE rb_blink1_getCachedSerial(VALUE self, VALUE i) {
   const wchar_t *ret = blink1_getCachedSerial(FIX2INT(i));
-  char *dest;
-  wcstombs(dest, ret, sizeof(ret));
+  char dest[16] = {"\0"};
+  int t = wcstombs(dest, ret, sizeof(ret));
   return rb_str_new2(dest);
 }
 

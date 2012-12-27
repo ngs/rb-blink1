@@ -50,4 +50,19 @@ class Blink1
     self.write_pattern_line(index, fade_millis, r, g, b)
   end
 
+  def self.list
+    count = enumerate_vid_pid(vendor_id, product_id)
+    i = 0
+    devs = []
+    while i < count do
+      devs << {
+        id: i,
+        serial: cached_serial(i),
+        path: cached_path(i)
+      }
+      i += 1
+    end
+    devs
+  end
+
 end
