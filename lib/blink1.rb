@@ -6,7 +6,21 @@ class Blink1
   attr_accessor :millis
   attr_accessor :delay_millis
 
-  def initialize
+  def initialize option = nil
+    case option
+    when Fixnum
+      open_by_id(option)
+    when Hash
+      path   = option[:path]   || option["path"]
+      serial = option[:serial] || option["serial"]
+      if path
+        open_by_path(path)
+      elsif serial
+        open_by_serial(serial)
+      end
+    when String
+      open_by_serial(option)
+    end
     @millis ||= 300
     @delay_millis ||= 500
   end
@@ -63,6 +77,16 @@ class Blink1
       i += 1
     end
     devs
+  end
+
+  def self.open option = nil
+    b = self.new(option)
+    b.open if option.nil?
+    if block_given?
+      yield(b)
+      b.close
+    end
+    b
   end
 
 end
