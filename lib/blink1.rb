@@ -79,14 +79,18 @@ class Blink1
     devs
   end
 
-  def self.open option = nil
+  def self.open option = nil, &block
     b = self.new(option)
     b.open if option.nil?
-    if block_given?
-      yield(b)
-      b.close
+    if block
+      begin
+        b.instance_eval &block
+      ensure
+        b.close
+      end
+    else
+      b
     end
-    b
   end
 
 end
