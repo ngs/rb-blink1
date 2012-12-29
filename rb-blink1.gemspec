@@ -11,6 +11,7 @@ Gem::Specification.new do |s|
   s.homepage    = "http://github.com/ngs/rb-blink1"
   s.summary     = "Ruby interface for blink(1)"
   s.description = "Controls blink(1)"
+  s.requirements << "libusb, version 1.0 or greater"
 
   s.rubyforge_project = "blink1"
   s.add_development_dependency  'bundler'
