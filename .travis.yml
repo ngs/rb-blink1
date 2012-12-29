@@ -1,4 +1,6 @@
 language: ruby
 rvm:
   - 1.9.3
+before_install:
+  - sudo apt-get install -qq libusb-1.0-0-dev
 
