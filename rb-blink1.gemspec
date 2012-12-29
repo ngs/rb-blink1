@@ -13,8 +13,9 @@ Gem::Specification.new do |s|
   s.description = "Controls blink(1)"
 
   s.rubyforge_project = "blink1"
-  s.add_development_dependency  'bundler',     '~> 1.0'
-  # s.add_development_dependency  'rspec',       '~> 2.11'
+  s.add_development_dependency  'bundler'
+  s.add_development_dependency  'rspec'
+  s.add_development_dependency  'rake'
   # s.add_development_dependency  'guard-rspec', '~> 1.2'
 
   s.files        = `git ls-files`.split("\n").reject{|f| f =~ /^(\..+|Gemfile.*)$/}
