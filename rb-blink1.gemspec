@@ -14,12 +14,16 @@ Gem::Specification.new do |s|
   s.requirements << "libusb, version 1.0 or greater"
 
   s.rubyforge_project = "blink1"
-  s.add_development_dependency  'bundler'
-  s.add_development_dependency  'rspec'
-  s.add_development_dependency  'rake'
-  # s.add_development_dependency  'guard-rspec', '~> 1.2'
 
-  s.files        = `git ls-files`.split("\n").reject{|f| f =~ /^(\..+|Gemfile.*)$/}
+  s.add_development_dependency 'bundler'
+  s.add_development_dependency 'guard-rake'
+  s.add_development_dependency 'guard-rspec'
+  s.add_development_dependency 'guard-spork'
+  s.add_development_dependency 'rb-fsevent'
+  s.add_development_dependency 'rspec'
+  s.add_development_dependency 'spork'
+
+  s.files        = `git ls-files`.split("\n").reject{|f| f =~ /^(\..+|Gemfile.*|Guardfile|)$/}
   s.extensions = ["ext/blink1/extconf.rb"]
   s.require_paths = ["lib", "ext"]
 end

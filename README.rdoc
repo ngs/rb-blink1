@@ -2,6 +2,8 @@
 
 The Ruby interface for blink(1)
 
+{<img src="https://travis-ci.org/ngs/rb-blink1.png?branch=master" alt="Build Status" />}[https://travis-ci.org/ngs/rb-blink1]
+
 == Install
 
     gem install rb-blink1
@@ -86,4 +88,4 @@ The Ruby interface for blink(1)
 
 == Author
 
-- {Atsushi Nagase}[http://ngs.io/]
+{Atsushi Nagase}[http://ngs.io/]
