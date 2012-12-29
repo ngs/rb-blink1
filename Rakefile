@@ -1,6 +1,7 @@
 require "bundler/gem_tasks"
 
 task :default => :spec
+task :spec => :build
 
 task :build do
   Dir.chdir('ext/blink1') do
@@ -12,4 +13,5 @@ task :build do
 end
 
 require 'rspec/core/rake_task'
+
 RSpec::Core::RakeTask.new

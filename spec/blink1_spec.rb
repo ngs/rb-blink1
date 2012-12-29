@@ -9,7 +9,7 @@ describe Blink1 do
     end
 
     it 'product_id' do
-      p Blink1.product_id.should eql(493)
+      Blink1.product_id.should eql(493)
     end
 
   end
