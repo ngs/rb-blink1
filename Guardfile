@@ -15,7 +15,8 @@ guard 'rake', :task => 'build' do
 end
 
 guard 'rspec' do
-  watch(%r{^lib/blink1.rb$}) { |m| "spec/lib/blink1_spec.rb" }
-  watch(%r{^ext/blink1/blink1.c$}) { |m| "spec/lib/blink1_spec.rb" }
-  watch(%r{^ext/blink1/extconf.rb$}) { |m| "spec/lib/blink1_spec.rb" }
+  watch(%r{^lib/blink1.rb$}) { |m| "spec/blink1_spec.rb" }
+  watch(%r{^ext/blink1/blink1.c$}) { |m| "spec/blink1_spec.rb" }
+  watch(%r{^ext/blink1/extconf.rb$}) { |m| "spec/blink1_spec.rb" }
+  watch(%r{^spec/blink1_spec.rb$}) { |m| "spec/blink1_spec.rb" }
 end
