@@ -30,10 +30,10 @@ when 'Windows_NT'
 when 'Linux'
 
   $CFLAGS <<
-    " #{ `pkg-config libusb-1.0 --cflags` } "
+    " #{ `pkg-config libusb-1.0 --cflags`.strip } "
 
   $LIBS <<
-    " #{ `pkg-config libusb-1.0 --libs` }"
+    " #{ `pkg-config libusb-1.0 --libs`.strip }"
     ' -lrt -lpthread -ldl -static '
 
   $HID_C = "#{$srcdir}/hid.c.libusb"
