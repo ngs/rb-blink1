@@ -1,3 +1,11 @@
+notification :tmux,
+  :display_message => true,
+  :default_message_color => '#000000',
+  :success => '#006600',
+  :failed  => '#660000',
+  :pending => '#660066',
+  :default => '#000066'
+
 guard 'spork' do
   watch('Gemfile')
   watch('Gemfile.lock')
