@@ -1,4 +1,6 @@
-require "bundler/gem_tasks"
+require 'bundler/gem_tasks'
+require 'rdoc/task'
+require 'rspec/core/rake_task'
 
 task :default => :spec
 task :spec => :build
@@ -12,6 +14,12 @@ task :build do
   end
 end
 
-require 'rspec/core/rake_task'
 
 RSpec::Core::RakeTask.new
+
+RDoc::Task.new do |rdoc|
+
+  rdoc.main = "README.rdoc"
+  rdoc.rdoc_files.include("README.rdoc", "lib/**/*.rb", "ext/blink1/blink1.c")
+
+end
