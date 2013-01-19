@@ -1,0 +1,1881 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <title>Blink1 - rb-blink1</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport' />
+    <link href='../css/bootstrap.min.css' media='screen' rel='stylesheet' type='text/css' />
+    <link href='../css/application.css' media='screen' rel='stylesheet' type='text/css' />
+    <link href='../css/coderay.css' media='screen' rel='stylesheet' type='text/css' />
+    <script src='../js/jquery.js' type='text/javascript'></script>
+    <script src='../js/bootstrap.min.js' type='text/javascript'></script>
+    <script src='../js/index.js' type='text/javascript'></script>
+    <script src='../js/application.js' type='text/javascript'></script>
+  </head>
+  <body class='class'>
+    <div class='navbar navbar-fixed-top'>
+      <div class='navbar-inner'>
+        <div class='container'>
+          <a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </a>
+          <a href=".." class="brand">rb-blink1</a>
+          <div class='nav-collapse'>
+            <ul class='nav'>
+              <li class='dropdown'>
+                <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+                  Classes
+                  <b class='caret'></b>
+                </a>
+                <ul class='dropdown-menu' role='menu'>
+                  <li><a href="Blink1.html">Blink1</a></li>
+                </ul>
+              </li>
+              <li class='dropdown'>
+                <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+                  Files
+                  <b class='caret'></b>
+                </a>
+                <ul class='dropdown-menu' role='menu'>
+                  <li><a href="../files/README_rdoc.html">README.rdoc</a></li>
+                  <li><a href="../files/ext/blink1/blink1_c.html">blink1.c</a></li>
+                  <li><a href="../files/lib/blink1_rb.html">blink1.rb</a></li>
+                  <li><a href="../files/lib/blink1/version_rb.html">version.rb</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class='navbar-search pull-right'>
+              <input class='search-query span2' id='search-query' placeholder='Search methods' type='text' />
+              <ul aria-labelledby='search-query' class='dropdown-menu' id='search-results' role='menu'></ul>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id='main'>
+      <div class='container'>
+        <div class='row'>
+  <div class='span9'>
+    <div class='page-header'>
+      <h1 class='name'>
+        <span class='type'>class</span>
+        Blink1
+      </h1>
+    </div>
+    <section id='content'>
+      <div id='text'>
+        <div id='description'>
+<pre>UNSPPORT</pre>
+
+<p>int blink1_write( hid_device* dev, void* buf, int len); int blink1_read(
+hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
+*dev, char* buf); //int blink1_playPattern(hid_device *dev,,);</p></div>
+        <div id='context'>
+</div>
+<div id='section'>
+  <div id='constants-list'>
+    <h2>Constants</h2>
+    <div class='name-list'>
+      <table class='table-striped table' summary='Constants'>
+        <tr class='top-aligned-row context-row'>
+          <th class='context-item-name'>VERSION</th>
+          <td>=</td>
+          <td class='context-item-value'>"0.0.5"</td>
+          <td>&nbsp;</td>
+          <td class='context-item-desc'></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id='attribute-list'>
+    <h2 class='section-bar'>Attributes</h2>
+    <div class='name-list'>
+      <table>
+        <tr class='top-aligned-row context-row'>
+          <td class='context-item-name'>
+            <a name='attribute-i-delay_millis'>delay_millis</a>
+          </td>
+          <td class='context-item-value'>[RW]</td>
+          <td class='context-item-desc'></td>
+        </tr>
+        <tr class='top-aligned-row context-row'>
+          <td class='context-item-name'>
+            <a name='attribute-i-millis'>millis</a>
+          </td>
+          <td class='context-item-value'>[RW]</td>
+          <td class='context-item-desc'></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id='methods'>
+    <article id='public class-methods'>
+      <h2>Public Class methods</h2>
+      <a name='method-c-cached_count'></a>
+      <section class='method public-class' id='method-method-c-cached_count'>
+        <h3 class='synopsis'>
+          <span class='name'>cached_count</span>
+          <span class='arguments'>()</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-cached_count-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-c-cached_count-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-c-cached_count-source-0" name="method-c-cached_count-source-0">0</a></strong>
+<a href="#method-c-cached_count-source-1" name="method-c-cached_count-source-1">1</a>
+<a href="#method-c-cached_count-source-2" name="method-c-cached_count-source-2">2</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_getCachedCount(VALUE self) {
+  <span style="color:#080;font-weight:bold">return</span> INT2NUM(blink1_getCachedCount());
+}</pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-c-cached_path'></a>
+      <section class='method public-class' id='method-method-c-cached_path'>
+        <h3 class='synopsis'>
+          <span class='name'>cached_path</span>
+          <span class='arguments'>(p1)</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-cached_path-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-c-cached_path-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-c-cached_path-source-0" name="method-c-cached_path-source-0">0</a></strong>
+<a href="#method-c-cached_path-source-1" name="method-c-cached_path-source-1">1</a>
+<a href="#method-c-cached_path-source-2" name="method-c-cached_path-source-2">2</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_blink1_getCachedPath(VALUE self, VALUE i) {
+  <span style="color:#080;font-weight:bold">return</span> rb_str_new2(blink1_getCachedPath(FIX2INT(i)));
+}</pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-c-cached_serial'></a>
+      <section class='method public-class' id='method-method-c-cached_serial'>
+        <h3 class='synopsis'>
+          <span class='name'>cached_serial</span>
+          <span class='arguments'>(p1)</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-cached_serial-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-c-cached_serial-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-c-cached_serial-source-0" name="method-c-cached_serial-source-0">0</a></strong>
+<a href="#method-c-cached_serial-source-1" name="method-c-cached_serial-source-1">1</a>
+<a href="#method-c-cached_serial-source-2" name="method-c-cached_serial-source-2">2</a>
+<a href="#method-c-cached_serial-source-3" name="method-c-cached_serial-source-3">3</a>
+<a href="#method-c-cached_serial-source-4" name="method-c-cached_serial-source-4">4</a>
+<a href="#method-c-cached_serial-source-5" name="method-c-cached_serial-source-5">5</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_getCachedSerial(VALUE self, VALUE i) {
+  <span style="color:#088;font-weight:bold">const</span> wchar_t *ret = blink1_getCachedSerial(FIX2INT(i));
+  <span style="color:#0a5;font-weight:bold">char</span> dest[<span style="color:#00D">16</span>] = {<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#b0b">\0</span><span style="color:#710">&quot;</span></span>};
+  <span style="color:#0a5;font-weight:bold">int</span> t = wcstombs(dest, ret, <span style="color:#080;font-weight:bold">sizeof</span>(ret));
+  <span style="color:#080;font-weight:bold">return</span> rb_str_new2(dest);
+}</pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-c-degamma'></a>
+      <section class='method public-class' id='method-method-c-degamma'>
+        <h3 class='synopsis'>
+          <span class='name'>degamma</span>
+          <span class='arguments'>(p1)</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-degamma-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-c-degamma-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-c-degamma-source-0" name="method-c-degamma-source-0">0</a></strong>
+<a href="#method-c-degamma-source-1" name="method-c-degamma-source-1">1</a>
+<a href="#method-c-degamma-source-2" name="method-c-degamma-source-2">2</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_degamma(VALUE self, VALUE i) {
+  <span style="color:#080;font-weight:bold">return</span> INT2NUM(blink1_degamma(FIX2INT(i)));
+}</pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-c-degamma_enabled'></a>
+      <section class='method public-class' id='method-method-c-degamma_enabled'>
+        <h3 class='synopsis'>
+          <span class='name'>degamma_enabled</span>
+          <span class='arguments'>()</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-degamma_enabled-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-c-degamma_enabled-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-c-degamma_enabled-source-0" name="method-c-degamma_enabled-source-0">0</a></strong>
+<a href="#method-c-degamma_enabled-source-1" name="method-c-degamma_enabled-source-1">1</a>
+<a href="#method-c-degamma_enabled-source-2" name="method-c-degamma_enabled-source-2">2</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_getDegammaEnabled(VALUE self) {
+  <span style="color:#080;font-weight:bold">return</span> degamma == <span style="color:#00D">1</span> ? Qtrue : Qfalse;
+}</pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-c-degamma_enabled-3D'></a>
+      <section class='method public-class' id='method-method-c-degamma_enabled-3D'>
+        <h3 class='synopsis'>
+          <span class='name'>degamma_enabled=</span>
+          <span class='arguments'>(p1)</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-degamma_enabled-3D-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-c-degamma_enabled-3D-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-c-degamma_enabled-3D-source-0" name="method-c-degamma_enabled-3D-source-0">0</a></strong>
+<a href="#method-c-degamma_enabled-3D-source-1" name="method-c-degamma_enabled-3D-source-1">1</a>
+<a href="#method-c-degamma_enabled-3D-source-2" name="method-c-degamma_enabled-3D-source-2">2</a>
+<a href="#method-c-degamma_enabled-3D-source-3" name="method-c-degamma_enabled-3D-source-3">3</a>
+<a href="#method-c-degamma_enabled-3D-source-4" name="method-c-degamma_enabled-3D-source-4">4</a>
+<a href="#method-c-degamma_enabled-3D-source-5" name="method-c-degamma_enabled-3D-source-5">5</a>
+<a href="#method-c-degamma_enabled-3D-source-6" name="method-c-degamma_enabled-3D-source-6">6</a>
+<a href="#method-c-degamma_enabled-3D-source-7" name="method-c-degamma_enabled-3D-source-7">7</a>
+<a href="#method-c-degamma_enabled-3D-source-8" name="method-c-degamma_enabled-3D-source-8">8</a>
+<a href="#method-c-degamma_enabled-3D-source-9" name="method-c-degamma_enabled-3D-source-9">9</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_setDegammaEnabled(VALUE self, VALUE enabled) {
+  <span style="color:#080;font-weight:bold">if</span>(RTEST(enabled)) {
+    degamma = <span style="color:#00D">1</span>;
+    blink1_enableDegamma();
+  } <span style="color:#080;font-weight:bold">else</span> {
+    degamma = <span style="color:#00D">0</span>;
+    blink1_disableDegamma();
+  }
+  <span style="color:#080;font-weight:bold">return</span> Qnil;
+}</pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-c-enumerate'></a>
+      <section class='method public-class' id='method-method-c-enumerate'>
+        <h3 class='synopsis'>
+          <span class='name'>enumerate</span>
+          <span class='arguments'>()</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-enumerate-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-c-enumerate-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-c-enumerate-source-0" name="method-c-enumerate-source-0">0</a></strong>
+<a href="#method-c-enumerate-source-1" name="method-c-enumerate-source-1">1</a>
+<a href="#method-c-enumerate-source-2" name="method-c-enumerate-source-2">2</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_enumerate(VALUE self) {
+  <span style="color:#080;font-weight:bold">return</span> INT2NUM(blink1_enumerate());
+}</pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-c-enumerate_vid_pid'></a>
+      <section class='method public-class' id='method-method-c-enumerate_vid_pid'>
+        <h3 class='synopsis'>
+          <span class='name'>enumerate_vid_pid</span>
+          <span class='arguments'>(p1, p2)</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-enumerate_vid_pid-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-c-enumerate_vid_pid-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-c-enumerate_vid_pid-source-0" name="method-c-enumerate_vid_pid-source-0">0</a></strong>
+<a href="#method-c-enumerate_vid_pid-source-1" name="method-c-enumerate_vid_pid-source-1">1</a>
+<a href="#method-c-enumerate_vid_pid-source-2" name="method-c-enumerate_vid_pid-source-2">2</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_enumerateByVidPid(VALUE self, VALUE vid, VALUE pid) {
+  <span style="color:#080;font-weight:bold">return</span> INT2NUM(blink1_enumerateByVidPid(FIX2INT(vid), FIX2INT(pid)));
+}</pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-c-error_message'></a>
+      <section class='method public-class' id='method-method-c-error_message'>
+        <h3 class='synopsis'>
+          <span class='name'>error_message</span>
+          <span class='arguments'>(p1)</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-error_message-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-c-error_message-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-c-error_message-source-0" name="method-c-error_message-source-0">0</a></strong>
+<a href="#method-c-error_message-source-1" name="method-c-error_message-source-1">1</a>
+<a href="#method-c-error_message-source-2" name="method-c-error_message-source-2">2</a>
+<a href="#method-c-error_message-source-3" name="method-c-error_message-source-3">3</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_error_msg(VALUE self, VALUE code) {
+  <span style="color:#0a5;font-weight:bold">char</span> *msg = blink1_error_msg(FIX2INT(code));
+  <span style="color:#080;font-weight:bold">return</span> msg == <span style="color:#069">NULL</span> ? Qnil : rb_str_new2(msg);
+}</pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-c-list'></a>
+      <section class='method public-class' id='method-method-c-list'>
+        <h3 class='synopsis'>
+          <span class='name'>list</span>
+          <span class='arguments'>()</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-list-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-c-list-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#method-c-list-source-67" name="method-c-list-source-67">67</a>
+<a href="#method-c-list-source-68" name="method-c-list-source-68">68</a>
+<a href="#method-c-list-source-69" name="method-c-list-source-69">69</a>
+<strong><a href="#method-c-list-source-70" name="method-c-list-source-70">70</a></strong>
+<a href="#method-c-list-source-71" name="method-c-list-source-71">71</a>
+<a href="#method-c-list-source-72" name="method-c-list-source-72">72</a>
+<a href="#method-c-list-source-73" name="method-c-list-source-73">73</a>
+<a href="#method-c-list-source-74" name="method-c-list-source-74">74</a>
+<a href="#method-c-list-source-75" name="method-c-list-source-75">75</a>
+<a href="#method-c-list-source-76" name="method-c-list-source-76">76</a>
+<a href="#method-c-list-source-77" name="method-c-list-source-77">77</a>
+<a href="#method-c-list-source-78" name="method-c-list-source-78">78</a>
+<a href="#method-c-list-source-79" name="method-c-list-source-79">79</a>
+<strong><a href="#method-c-list-source-80" name="method-c-list-source-80">80</a></strong>
+</pre></td>
+  <td class="code"><pre><span style="color:#080;font-weight:bold">def</span> <span style="color:#069">self</span>.<span style="color:#06B;font-weight:bold">list</span>
+  count = enumerate_vid_pid(vendor_id, product_id)
+  i = <span style="color:#00D">0</span>
+  devs = []
+  <span style="color:#080;font-weight:bold">while</span> i &lt; count <span style="color:#080;font-weight:bold">do</span>
+    devs &lt;&lt; {
+      id: i,
+      serial: cached_serial(i),
+      path: cached_path(i)
+    }
+    i += <span style="color:#00D">1</span>
+  <span style="color:#080;font-weight:bold">end</span>
+  devs
+<span style="color:#080;font-weight:bold">end</span></pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-c-new'></a>
+      <section class='method public-class' id='method-method-c-new'>
+        <h3 class='synopsis'>
+          <span class='name'>new</span>
+          <span class='arguments'>(option = nil)</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-new-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-c-new-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#method-c-new-source-9" name="method-c-new-source-9">9</a>
+<strong><a href="#method-c-new-source-10" name="method-c-new-source-10">10</a></strong>
+<a href="#method-c-new-source-11" name="method-c-new-source-11">11</a>
+<a href="#method-c-new-source-12" name="method-c-new-source-12">12</a>
+<a href="#method-c-new-source-13" name="method-c-new-source-13">13</a>
+<a href="#method-c-new-source-14" name="method-c-new-source-14">14</a>
+<a href="#method-c-new-source-15" name="method-c-new-source-15">15</a>
+<a href="#method-c-new-source-16" name="method-c-new-source-16">16</a>
+<a href="#method-c-new-source-17" name="method-c-new-source-17">17</a>
+<a href="#method-c-new-source-18" name="method-c-new-source-18">18</a>
+<a href="#method-c-new-source-19" name="method-c-new-source-19">19</a>
+<strong><a href="#method-c-new-source-20" name="method-c-new-source-20">20</a></strong>
+<a href="#method-c-new-source-21" name="method-c-new-source-21">21</a>
+<a href="#method-c-new-source-22" name="method-c-new-source-22">22</a>
+<a href="#method-c-new-source-23" name="method-c-new-source-23">23</a>
+<a href="#method-c-new-source-24" name="method-c-new-source-24">24</a>
+<a href="#method-c-new-source-25" name="method-c-new-source-25">25</a>
+<a href="#method-c-new-source-26" name="method-c-new-source-26">26</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">initialize</span> option = <span style="color:#069">nil</span>
+  <span style="color:#080;font-weight:bold">case</span> option
+  <span style="color:#080;font-weight:bold">when</span> <span style="color:#036;font-weight:bold">Fixnum</span>
+    open_by_id(option)
+  <span style="color:#080;font-weight:bold">when</span> <span style="color:#036;font-weight:bold">Hash</span>
+    path   = option[<span style="color:#A60">:path</span>]   || option[<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">path</span><span style="color:#710">&quot;</span></span>]
+    serial = option[<span style="color:#A60">:serial</span>] || option[<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">serial</span><span style="color:#710">&quot;</span></span>]
+    <span style="color:#080;font-weight:bold">if</span> path
+      open_by_path(path)
+    <span style="color:#080;font-weight:bold">elsif</span> serial
+      open_by_serial(serial)
+    <span style="color:#080;font-weight:bold">end</span>
+  <span style="color:#080;font-weight:bold">when</span> <span style="color:#036;font-weight:bold">String</span>
+    open_by_serial(option)
+  <span style="color:#080;font-weight:bold">end</span>
+  <span style="color:#33B">@millis</span> ||= <span style="color:#00D">300</span>
+  <span style="color:#33B">@delay_millis</span> ||= <span style="color:#00D">500</span>
+<span style="color:#080;font-weight:bold">end</span></pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-c-open'></a>
+      <section class='method public-class' id='method-method-c-open'>
+        <h3 class='synopsis'>
+          <span class='name'>open</span>
+          <span class='arguments'>(option = nil, &block)</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-open-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-c-open-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#method-c-open-source-82" name="method-c-open-source-82">82</a>
+<a href="#method-c-open-source-83" name="method-c-open-source-83">83</a>
+<a href="#method-c-open-source-84" name="method-c-open-source-84">84</a>
+<a href="#method-c-open-source-85" name="method-c-open-source-85">85</a>
+<a href="#method-c-open-source-86" name="method-c-open-source-86">86</a>
+<a href="#method-c-open-source-87" name="method-c-open-source-87">87</a>
+<a href="#method-c-open-source-88" name="method-c-open-source-88">88</a>
+<a href="#method-c-open-source-89" name="method-c-open-source-89">89</a>
+<strong><a href="#method-c-open-source-90" name="method-c-open-source-90">90</a></strong>
+<a href="#method-c-open-source-91" name="method-c-open-source-91">91</a>
+<a href="#method-c-open-source-92" name="method-c-open-source-92">92</a>
+<a href="#method-c-open-source-93" name="method-c-open-source-93">93</a>
+<a href="#method-c-open-source-94" name="method-c-open-source-94">94</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#080;font-weight:bold">def</span> <span style="color:#069">self</span>.<span style="color:#06B;font-weight:bold">open</span> option = <span style="color:#069">nil</span>, &amp;block
+  b = <span style="color:#069">self</span>.new(option)
+  b.open <span style="color:#080;font-weight:bold">if</span> option.nil?
+  <span style="color:#080;font-weight:bold">if</span> block
+    <span style="color:#080;font-weight:bold">begin</span>
+      b.instance_eval &amp;block
+    <span style="color:#080;font-weight:bold">ensure</span>
+      b.close
+    <span style="color:#080;font-weight:bold">end</span>
+  <span style="color:#080;font-weight:bold">else</span>
+    b
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span></pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-c-product_id'></a>
+      <section class='method public-class' id='method-method-c-product_id'>
+        <h3 class='synopsis'>
+          <span class='name'>product_id</span>
+          <span class='arguments'>()</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-product_id-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-c-product_id-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-c-product_id-source-0" name="method-c-product_id-source-0">0</a></strong>
+<a href="#method-c-product_id-source-1" name="method-c-product_id-source-1">1</a>
+<a href="#method-c-product_id-source-2" name="method-c-product_id-source-2">2</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_pid(VALUE self) {
+  <span style="color:#080;font-weight:bold">return</span> INT2NUM(blink1_pid());
+}</pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-c-sleep'></a>
+      <section class='method public-class' id='method-method-c-sleep'>
+        <h3 class='synopsis'>
+          <span class='name'>sleep</span>
+          <span class='arguments'>(p1)</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-sleep-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-c-sleep-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-c-sleep-source-0" name="method-c-sleep-source-0">0</a></strong>
+<a href="#method-c-sleep-source-1" name="method-c-sleep-source-1">1</a>
+<a href="#method-c-sleep-source-2" name="method-c-sleep-source-2">2</a>
+<a href="#method-c-sleep-source-3" name="method-c-sleep-source-3">3</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_sleep(VALUE self, VALUE delayMillis) {
+  blink1_sleep(FIX2UINT(delayMillis));
+  <span style="color:#080;font-weight:bold">return</span> Qnil;
+}</pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-c-sort_paths'></a>
+      <section class='method public-class' id='method-method-c-sort_paths'>
+        <h3 class='synopsis'>
+          <span class='name'>sort_paths</span>
+          <span class='arguments'>()</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-sort_paths-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-c-sort_paths-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-c-sort_paths-source-0" name="method-c-sort_paths-source-0">0</a></strong>
+<a href="#method-c-sort_paths-source-1" name="method-c-sort_paths-source-1">1</a>
+<a href="#method-c-sort_paths-source-2" name="method-c-sort_paths-source-2">2</a>
+<a href="#method-c-sort_paths-source-3" name="method-c-sort_paths-source-3">3</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_sortPaths(VALUE self) {
+  blink1_sortPaths();
+  <span style="color:#080;font-weight:bold">return</span> Qnil;
+}</pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-c-sort_serials'></a>
+      <section class='method public-class' id='method-method-c-sort_serials'>
+        <h3 class='synopsis'>
+          <span class='name'>sort_serials</span>
+          <span class='arguments'>()</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-sort_serials-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-c-sort_serials-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-c-sort_serials-source-0" name="method-c-sort_serials-source-0">0</a></strong>
+<a href="#method-c-sort_serials-source-1" name="method-c-sort_serials-source-1">1</a>
+<a href="#method-c-sort_serials-source-2" name="method-c-sort_serials-source-2">2</a>
+<a href="#method-c-sort_serials-source-3" name="method-c-sort_serials-source-3">3</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_sortSerials(VALUE self) {
+  blink1_sortSerials();
+  <span style="color:#080;font-weight:bold">return</span> Qnil;
+}</pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-c-vendor_id'></a>
+      <section class='method public-class' id='method-method-c-vendor_id'>
+        <h3 class='synopsis'>
+          <span class='name'>vendor_id</span>
+          <span class='arguments'>()</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-vendor_id-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-c-vendor_id-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-c-vendor_id-source-0" name="method-c-vendor_id-source-0">0</a></strong>
+<a href="#method-c-vendor_id-source-1" name="method-c-vendor_id-source-1">1</a>
+<a href="#method-c-vendor_id-source-2" name="method-c-vendor_id-source-2">2</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_vid(VALUE self) {
+  <span style="color:#080;font-weight:bold">return</span> INT2NUM(blink1_vid());
+}</pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+    </article>
+    <article id='public instance-methods'>
+      <h2>Public Instance methods</h2>
+      <a name='method-i-5B-5D'></a>
+      <section class='method public-instance' id='method-method-i-5B-5D'>
+        <h3 class='synopsis'>
+          <span class='name'>[]</span>
+          <span class='arguments'>(index)</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-5B-5D-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-i-5B-5D-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#method-i-5B-5D-source-55" name="method-i-5B-5D-source-55">55</a>
+<a href="#method-i-5B-5D-source-56" name="method-i-5B-5D-source-56">56</a>
+<a href="#method-i-5B-5D-source-57" name="method-i-5B-5D-source-57">57</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">[]</span> index
+  <span style="color:#069">self</span>.read_pattern_line(index)
+<span style="color:#080;font-weight:bold">end</span></pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-i-5B-5D-3D'></a>
+      <section class='method public-instance' id='method-method-i-5B-5D-3D'>
+        <h3 class='synopsis'>
+          <span class='name'>[]=</span>
+          <span class='arguments'>(index, prop)</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-5B-5D-3D-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-i-5B-5D-3D-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#method-i-5B-5D-3D-source-59" name="method-i-5B-5D-3D-source-59">59</a>
+<strong><a href="#method-i-5B-5D-3D-source-60" name="method-i-5B-5D-3D-source-60">60</a></strong>
+<a href="#method-i-5B-5D-3D-source-61" name="method-i-5B-5D-3D-source-61">61</a>
+<a href="#method-i-5B-5D-3D-source-62" name="method-i-5B-5D-3D-source-62">62</a>
+<a href="#method-i-5B-5D-3D-source-63" name="method-i-5B-5D-3D-source-63">63</a>
+<a href="#method-i-5B-5D-3D-source-64" name="method-i-5B-5D-3D-source-64">64</a>
+<a href="#method-i-5B-5D-3D-source-65" name="method-i-5B-5D-3D-source-65">65</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">[]=</span> index, prop
+  fade_millis = prop[<span style="color:#A60">:fade_millis</span>] || prop[<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">fade_millis</span><span style="color:#710">'</span></span>]
+  r = prop[<span style="color:#A60">:r</span>] || prop[<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">r</span><span style="color:#710">'</span></span>]
+  g = prop[<span style="color:#A60">:g</span>] || prop[<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">g</span><span style="color:#710">'</span></span>]
+  b = prop[<span style="color:#A60">:b</span>] || prop[<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">b</span><span style="color:#710">'</span></span>]
+  <span style="color:#069">self</span>.write_pattern_line(index, fade_millis, r, g, b)
+<span style="color:#080;font-weight:bold">end</span></pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-i-blink'></a>
+      <section class='method public-instance' id='method-method-i-blink'>
+        <h3 class='synopsis'>
+          <span class='name'>blink</span>
+          <span class='arguments'>(r, g, b, times)</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-blink-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-i-blink-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#method-i-blink-source-28" name="method-i-blink-source-28">28</a>
+<a href="#method-i-blink-source-29" name="method-i-blink-source-29">29</a>
+<strong><a href="#method-i-blink-source-30" name="method-i-blink-source-30">30</a></strong>
+<a href="#method-i-blink-source-31" name="method-i-blink-source-31">31</a>
+<a href="#method-i-blink-source-32" name="method-i-blink-source-32">32</a>
+<a href="#method-i-blink-source-33" name="method-i-blink-source-33">33</a>
+<a href="#method-i-blink-source-34" name="method-i-blink-source-34">34</a>
+<a href="#method-i-blink-source-35" name="method-i-blink-source-35">35</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">blink</span> r, g, b, times
+  times.times <span style="color:#080;font-weight:bold">do</span>
+    <span style="color:#069">self</span>.fade_to_rgb(millis, r, g, b)
+    <span style="color:#069">self</span>.class.sleep(delay_millis)
+    <span style="color:#069">self</span>.fade_to_rgb(millis, <span style="color:#00D">0</span>, <span style="color:#00D">0</span>, <span style="color:#00D">0</span>)
+    <span style="color:#069">self</span>.class.sleep(delay_millis)
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span></pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-i-close'></a>
+      <section class='method public-instance' id='method-method-i-close'>
+        <h3 class='synopsis'>
+          <span class='name'>close</span>
+          <span class='arguments'>()</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-close-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-i-close-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-close-source-0" name="method-i-close-source-0">0</a></strong>
+<a href="#method-i-close-source-1" name="method-i-close-source-1">1</a>
+<a href="#method-i-close-source-2" name="method-i-close-source-2">2</a>
+<a href="#method-i-close-source-3" name="method-i-close-source-3">3</a>
+<a href="#method-i-close-source-4" name="method-i-close-source-4">4</a>
+<a href="#method-i-close-source-5" name="method-i-close-source-5">5</a>
+<a href="#method-i-close-source-6" name="method-i-close-source-6">6</a>
+<a href="#method-i-close-source-7" name="method-i-close-source-7">7</a>
+<a href="#method-i-close-source-8" name="method-i-close-source-8">8</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_close(VALUE self) {
+  <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
+  Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
+  <span style="color:#080;font-weight:bold">if</span>(ins-&gt;opened == <span style="color:#00D">1</span>) {
+    blink1_close(ins-&gt;dev);
+    ins-&gt;opened = <span style="color:#00D">0</span>;
+  }
+  <span style="color:#080;font-weight:bold">return</span> Qnil;
+}</pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-i-eeread'></a>
+      <section class='method public-instance' id='method-method-i-eeread'>
+        <h3 class='synopsis'>
+          <span class='name'>eeread</span>
+          <span class='arguments'>(p1)</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-eeread-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-i-eeread-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-eeread-source-0" name="method-i-eeread-source-0">0</a></strong>
+<a href="#method-i-eeread-source-1" name="method-i-eeread-source-1">1</a>
+<a href="#method-i-eeread-source-2" name="method-i-eeread-source-2">2</a>
+<a href="#method-i-eeread-source-3" name="method-i-eeread-source-3">3</a>
+<a href="#method-i-eeread-source-4" name="method-i-eeread-source-4">4</a>
+<a href="#method-i-eeread-source-5" name="method-i-eeread-source-5">5</a>
+<a href="#method-i-eeread-source-6" name="method-i-eeread-source-6">6</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_eeread(VALUE self, VALUE addr) {
+  <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
+  uint8_t val = <span style="color:#00D">0</span>;
+  Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
+  blink1_eeread(ins-&gt;dev, FIX2UINT(addr), &amp;val);
+  <span style="color:#080;font-weight:bold">return</span> UINT2NUM(val);
+}</pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-i-eewrite'></a>
+      <section class='method public-instance' id='method-method-i-eewrite'>
+        <h3 class='synopsis'>
+          <span class='name'>eewrite</span>
+          <span class='arguments'>(p1, p2)</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-eewrite-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-i-eewrite-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-eewrite-source-0" name="method-i-eewrite-source-0">0</a></strong>
+<a href="#method-i-eewrite-source-1" name="method-i-eewrite-source-1">1</a>
+<a href="#method-i-eewrite-source-2" name="method-i-eewrite-source-2">2</a>
+<a href="#method-i-eewrite-source-3" name="method-i-eewrite-source-3">3</a>
+<a href="#method-i-eewrite-source-4" name="method-i-eewrite-source-4">4</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_eewrite(VALUE self, VALUE addr, VALUE val) {
+  <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
+  Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
+  <span style="color:#080;font-weight:bold">return</span> INT2NUM(blink1_eewrite(ins-&gt;dev, FIX2UINT(addr), FIX2UINT(val)));
+}</pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-i-fade_to_rgb'></a>
+      <section class='method public-instance' id='method-method-i-fade_to_rgb'>
+        <h3 class='synopsis'>
+          <span class='name'>fade_to_rgb</span>
+          <span class='arguments'>(p1, p2, p3, p4)</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-fade_to_rgb-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-i-fade_to_rgb-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-fade_to_rgb-source-0" name="method-i-fade_to_rgb-source-0">0</a></strong>
+<a href="#method-i-fade_to_rgb-source-1" name="method-i-fade_to_rgb-source-1">1</a>
+<a href="#method-i-fade_to_rgb-source-2" name="method-i-fade_to_rgb-source-2">2</a>
+<a href="#method-i-fade_to_rgb-source-3" name="method-i-fade_to_rgb-source-3">3</a>
+<a href="#method-i-fade_to_rgb-source-4" name="method-i-fade_to_rgb-source-4">4</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_fadeToRGB(VALUE self, VALUE fadeMillis, VALUE r, VALUE g, VALUE b) {
+  <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
+  Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
+  <span style="color:#080;font-weight:bold">return</span> INT2NUM(blink1_fadeToRGB(ins-&gt;dev, FIX2UINT(fadeMillis), FIX2UINT(r), FIX2UINT(g), FIX2UINT(b)));
+}</pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-i-off'></a>
+      <section class='method public-instance' id='method-method-i-off'>
+        <h3 class='synopsis'>
+          <span class='name'>off</span>
+          <span class='arguments'>()</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-off-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-i-off-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#method-i-off-source-51" name="method-i-off-source-51">51</a>
+<a href="#method-i-off-source-52" name="method-i-off-source-52">52</a>
+<a href="#method-i-off-source-53" name="method-i-off-source-53">53</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">off</span>
+  <span style="color:#069">self</span>.fade_to_rgb(millis, <span style="color:#00D">0</span>, <span style="color:#00D">0</span>, <span style="color:#00D">0</span>)
+<span style="color:#080;font-weight:bold">end</span></pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-i-on'></a>
+      <section class='method public-instance' id='method-method-i-on'>
+        <h3 class='synopsis'>
+          <span class='name'>on</span>
+          <span class='arguments'>()</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-on-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-i-on-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#method-i-on-source-47" name="method-i-on-source-47">47</a>
+<a href="#method-i-on-source-48" name="method-i-on-source-48">48</a>
+<a href="#method-i-on-source-49" name="method-i-on-source-49">49</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">on</span>
+  <span style="color:#069">self</span>.fade_to_rgb(millis, <span style="color:#00D">0xff</span>, <span style="color:#00D">0xff</span>, <span style="color:#00D">0xff</span>)
+<span style="color:#080;font-weight:bold">end</span></pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-i-open'></a>
+      <section class='method public-instance' id='method-method-i-open'>
+        <h3 class='synopsis'>
+          <span class='name'>open</span>
+          <span class='arguments'>()</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-open-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-i-open-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-open-source-0" name="method-i-open-source-0">0</a></strong>
+<a href="#method-i-open-source-1" name="method-i-open-source-1">1</a>
+<a href="#method-i-open-source-2" name="method-i-open-source-2">2</a>
+<a href="#method-i-open-source-3" name="method-i-open-source-3">3</a>
+<a href="#method-i-open-source-4" name="method-i-open-source-4">4</a>
+<a href="#method-i-open-source-5" name="method-i-open-source-5">5</a>
+<a href="#method-i-open-source-6" name="method-i-open-source-6">6</a>
+<a href="#method-i-open-source-7" name="method-i-open-source-7">7</a>
+<a href="#method-i-open-source-8" name="method-i-open-source-8">8</a>
+<a href="#method-i-open-source-9" name="method-i-open-source-9">9</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_open(VALUE self) {
+  <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
+  Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
+  <span style="color:#080;font-weight:bold">if</span>(ins-&gt;opened == <span style="color:#00D">0</span>) {
+    ins-&gt;dev = blink1_open();
+    ins-&gt;opened = <span style="color:#00D">1</span>;
+    <span style="color:#080;font-weight:bold">return</span> Qtrue;
+  }
+  <span style="color:#080;font-weight:bold">return</span> Qfalse;
+}</pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-i-open_by_id'></a>
+      <section class='method public-instance' id='method-method-i-open_by_id'>
+        <h3 class='synopsis'>
+          <span class='name'>open_by_id</span>
+          <span class='arguments'>(p1)</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-open_by_id-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-i-open_by_id-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-open_by_id-source-0" name="method-i-open_by_id-source-0">0</a></strong>
+<a href="#method-i-open_by_id-source-1" name="method-i-open_by_id-source-1">1</a>
+<a href="#method-i-open_by_id-source-2" name="method-i-open_by_id-source-2">2</a>
+<a href="#method-i-open_by_id-source-3" name="method-i-open_by_id-source-3">3</a>
+<a href="#method-i-open_by_id-source-4" name="method-i-open_by_id-source-4">4</a>
+<a href="#method-i-open_by_id-source-5" name="method-i-open_by_id-source-5">5</a>
+<a href="#method-i-open_by_id-source-6" name="method-i-open_by_id-source-6">6</a>
+<a href="#method-i-open_by_id-source-7" name="method-i-open_by_id-source-7">7</a>
+<a href="#method-i-open_by_id-source-8" name="method-i-open_by_id-source-8">8</a>
+<a href="#method-i-open_by_id-source-9" name="method-i-open_by_id-source-9">9</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_openById(VALUE self, VALUE id) {
+  <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
+  Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
+  <span style="color:#080;font-weight:bold">if</span>(ins-&gt;opened == <span style="color:#00D">0</span>) {
+    ins-&gt;dev = blink1_open();
+    ins-&gt;opened = <span style="color:#00D">1</span>;
+    <span style="color:#080;font-weight:bold">return</span> Qtrue;
+  }
+  <span style="color:#080;font-weight:bold">return</span> Qfalse;
+}</pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-i-open_by_path'></a>
+      <section class='method public-instance' id='method-method-i-open_by_path'>
+        <h3 class='synopsis'>
+          <span class='name'>open_by_path</span>
+          <span class='arguments'>(p1)</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-open_by_path-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-i-open_by_path-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-open_by_path-source-0" name="method-i-open_by_path-source-0">0</a></strong>
+<a href="#method-i-open_by_path-source-1" name="method-i-open_by_path-source-1">1</a>
+<a href="#method-i-open_by_path-source-2" name="method-i-open_by_path-source-2">2</a>
+<a href="#method-i-open_by_path-source-3" name="method-i-open_by_path-source-3">3</a>
+<a href="#method-i-open_by_path-source-4" name="method-i-open_by_path-source-4">4</a>
+<a href="#method-i-open_by_path-source-5" name="method-i-open_by_path-source-5">5</a>
+<a href="#method-i-open_by_path-source-6" name="method-i-open_by_path-source-6">6</a>
+<a href="#method-i-open_by_path-source-7" name="method-i-open_by_path-source-7">7</a>
+<a href="#method-i-open_by_path-source-8" name="method-i-open_by_path-source-8">8</a>
+<a href="#method-i-open_by_path-source-9" name="method-i-open_by_path-source-9">9</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_openByPath(VALUE self, VALUE path) {
+  <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
+  Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
+  <span style="color:#080;font-weight:bold">if</span>(ins-&gt;opened == <span style="color:#00D">0</span>) {
+    ins-&gt;dev = blink1_open();
+    ins-&gt;opened = <span style="color:#00D">1</span>;
+    <span style="color:#080;font-weight:bold">return</span> Qtrue;
+  }
+  <span style="color:#080;font-weight:bold">return</span> Qfalse;
+}</pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-i-open_by_serial'></a>
+      <section class='method public-instance' id='method-method-i-open_by_serial'>
+        <h3 class='synopsis'>
+          <span class='name'>open_by_serial</span>
+          <span class='arguments'>(p1)</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-open_by_serial-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-i-open_by_serial-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-open_by_serial-source-0" name="method-i-open_by_serial-source-0">0</a></strong>
+<a href="#method-i-open_by_serial-source-1" name="method-i-open_by_serial-source-1">1</a>
+<a href="#method-i-open_by_serial-source-2" name="method-i-open_by_serial-source-2">2</a>
+<a href="#method-i-open_by_serial-source-3" name="method-i-open_by_serial-source-3">3</a>
+<a href="#method-i-open_by_serial-source-4" name="method-i-open_by_serial-source-4">4</a>
+<a href="#method-i-open_by_serial-source-5" name="method-i-open_by_serial-source-5">5</a>
+<a href="#method-i-open_by_serial-source-6" name="method-i-open_by_serial-source-6">6</a>
+<a href="#method-i-open_by_serial-source-7" name="method-i-open_by_serial-source-7">7</a>
+<a href="#method-i-open_by_serial-source-8" name="method-i-open_by_serial-source-8">8</a>
+<a href="#method-i-open_by_serial-source-9" name="method-i-open_by_serial-source-9">9</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_openBySerial(VALUE self, VALUE serial) {
+  <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
+  Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
+  <span style="color:#080;font-weight:bold">if</span>(ins-&gt;opened == <span style="color:#00D">0</span>) {
+    ins-&gt;dev = blink1_open();
+    ins-&gt;opened = <span style="color:#00D">1</span>;
+    <span style="color:#080;font-weight:bold">return</span> Qtrue;
+  }
+  <span style="color:#080;font-weight:bold">return</span> Qfalse;
+}</pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-i-opened-3F'></a>
+      <section class='method public-instance' id='method-method-i-opened-3F'>
+        <h3 class='synopsis'>
+          <span class='name'>opened?</span>
+          <span class='arguments'>()</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-opened-3F-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-i-opened-3F-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-opened-3F-source-0" name="method-i-opened-3F-source-0">0</a></strong>
+<a href="#method-i-opened-3F-source-1" name="method-i-opened-3F-source-1">1</a>
+<a href="#method-i-opened-3F-source-2" name="method-i-opened-3F-source-2">2</a>
+<a href="#method-i-opened-3F-source-3" name="method-i-opened-3F-source-3">3</a>
+<a href="#method-i-opened-3F-source-4" name="method-i-opened-3F-source-4">4</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_opened(VALUE self) {
+  <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
+  Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
+  <span style="color:#080;font-weight:bold">return</span> ins-&gt;opened == <span style="color:#00D">1</span> ? Qtrue : Qfalse;
+}</pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-i-play'></a>
+      <section class='method public-instance' id='method-method-i-play'>
+        <h3 class='synopsis'>
+          <span class='name'>play</span>
+          <span class='arguments'>(p1)</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-play-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-i-play-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-play-source-0" name="method-i-play-source-0">0</a></strong>
+<a href="#method-i-play-source-1" name="method-i-play-source-1">1</a>
+<a href="#method-i-play-source-2" name="method-i-play-source-2">2</a>
+<a href="#method-i-play-source-3" name="method-i-play-source-3">3</a>
+<a href="#method-i-play-source-4" name="method-i-play-source-4">4</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_play(VALUE self, VALUE pos) {
+  <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
+  Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
+  <span style="color:#080;font-weight:bold">return</span> INT2NUM(blink1_play(ins-&gt;dev, <span style="color:#00D">1</span>, FIX2UINT(pos)));
+}</pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-i-random'></a>
+      <section class='method public-instance' id='method-method-i-random'>
+        <h3 class='synopsis'>
+          <span class='name'>random</span>
+          <span class='arguments'>(times)</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-random-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-i-random-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#method-i-random-source-37" name="method-i-random-source-37">37</a>
+<a href="#method-i-random-source-38" name="method-i-random-source-38">38</a>
+<a href="#method-i-random-source-39" name="method-i-random-source-39">39</a>
+<strong><a href="#method-i-random-source-40" name="method-i-random-source-40">40</a></strong>
+<a href="#method-i-random-source-41" name="method-i-random-source-41">41</a>
+<a href="#method-i-random-source-42" name="method-i-random-source-42">42</a>
+<a href="#method-i-random-source-43" name="method-i-random-source-43">43</a>
+<a href="#method-i-random-source-44" name="method-i-random-source-44">44</a>
+<a href="#method-i-random-source-45" name="method-i-random-source-45">45</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">random</span> times
+  times.times <span style="color:#080;font-weight:bold">do</span>
+    r = rand(<span style="color:#00D">0xff</span>)
+    g = rand(<span style="color:#00D">0xff</span>)
+    b = rand(<span style="color:#00D">0xff</span>)
+    <span style="color:#069">self</span>.fade_to_rgb(millis, r, g, b)
+    <span style="color:#069">self</span>.class.sleep(delay_millis)
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span></pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-i-read_pattern_line'></a>
+      <section class='method public-instance' id='method-method-i-read_pattern_line'>
+        <h3 class='synopsis'>
+          <span class='name'>read_pattern_line</span>
+          <span class='arguments'>(p1)</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-read_pattern_line-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-i-read_pattern_line-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-read_pattern_line-source-0" name="method-i-read_pattern_line-source-0">0</a></strong>
+<a href="#method-i-read_pattern_line-source-1" name="method-i-read_pattern_line-source-1">1</a>
+<a href="#method-i-read_pattern_line-source-2" name="method-i-read_pattern_line-source-2">2</a>
+<a href="#method-i-read_pattern_line-source-3" name="method-i-read_pattern_line-source-3">3</a>
+<a href="#method-i-read_pattern_line-source-4" name="method-i-read_pattern_line-source-4">4</a>
+<a href="#method-i-read_pattern_line-source-5" name="method-i-read_pattern_line-source-5">5</a>
+<a href="#method-i-read_pattern_line-source-6" name="method-i-read_pattern_line-source-6">6</a>
+<a href="#method-i-read_pattern_line-source-7" name="method-i-read_pattern_line-source-7">7</a>
+<a href="#method-i-read_pattern_line-source-8" name="method-i-read_pattern_line-source-8">8</a>
+<a href="#method-i-read_pattern_line-source-9" name="method-i-read_pattern_line-source-9">9</a>
+<strong><a href="#method-i-read_pattern_line-source-10" name="method-i-read_pattern_line-source-10">10</a></strong>
+<a href="#method-i-read_pattern_line-source-11" name="method-i-read_pattern_line-source-11">11</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_readPatternLine(VALUE self, VALUE pos) {
+  <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
+  Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
+  uint16_t fadeMillis; uint8_t r; uint8_t g; uint8_t b;
+  blink1_readPatternLine(ins-&gt;dev, &amp;fadeMillis, &amp;r, &amp;g, &amp;b, FIX2UINT(pos));
+  VALUE hash = rb_hash_new();
+  rb_hash_aset(hash, rb_str_new2(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">fade_millis</span><span style="color:#710">&quot;</span></span>), UINT2NUM(fadeMillis));
+  rb_hash_aset(hash, rb_str_new2(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">r</span><span style="color:#710">&quot;</span></span>), UINT2NUM(r));
+  rb_hash_aset(hash, rb_str_new2(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">g</span><span style="color:#710">&quot;</span></span>), UINT2NUM(g));
+  rb_hash_aset(hash, rb_str_new2(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">b</span><span style="color:#710">&quot;</span></span>), UINT2NUM(b));
+  <span style="color:#080;font-weight:bold">return</span> hash;
+}</pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-i-serialnum'></a>
+      <section class='method public-instance' id='method-method-i-serialnum'>
+        <h3 class='synopsis'>
+          <span class='name'>serialnum</span>
+          <span class='arguments'>()</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-serialnum-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-i-serialnum-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-serialnum-source-0" name="method-i-serialnum-source-0">0</a></strong>
+<a href="#method-i-serialnum-source-1" name="method-i-serialnum-source-1">1</a>
+<a href="#method-i-serialnum-source-2" name="method-i-serialnum-source-2">2</a>
+<a href="#method-i-serialnum-source-3" name="method-i-serialnum-source-3">3</a>
+<a href="#method-i-serialnum-source-4" name="method-i-serialnum-source-4">4</a>
+<a href="#method-i-serialnum-source-5" name="method-i-serialnum-source-5">5</a>
+<a href="#method-i-serialnum-source-6" name="method-i-serialnum-source-6">6</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_serialnumread(VALUE self) {
+  <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
+  Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
+  uint8_t *serialnum;
+  blink1_serialnumread(ins-&gt;dev, &amp;serialnum);
+  <span style="color:#080;font-weight:bold">return</span> UINT2NUM(serialnum);
+}</pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-i-serialnum-3D'></a>
+      <section class='method public-instance' id='method-method-i-serialnum-3D'>
+        <h3 class='synopsis'>
+          <span class='name'>serialnum=</span>
+          <span class='arguments'>(p1)</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-serialnum-3D-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-i-serialnum-3D-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-serialnum-3D-source-0" name="method-i-serialnum-3D-source-0">0</a></strong>
+<a href="#method-i-serialnum-3D-source-1" name="method-i-serialnum-3D-source-1">1</a>
+<a href="#method-i-serialnum-3D-source-2" name="method-i-serialnum-3D-source-2">2</a>
+<a href="#method-i-serialnum-3D-source-3" name="method-i-serialnum-3D-source-3">3</a>
+<a href="#method-i-serialnum-3D-source-4" name="method-i-serialnum-3D-source-4">4</a>
+<a href="#method-i-serialnum-3D-source-5" name="method-i-serialnum-3D-source-5">5</a>
+<a href="#method-i-serialnum-3D-source-6" name="method-i-serialnum-3D-source-6">6</a>
+<a href="#method-i-serialnum-3D-source-7" name="method-i-serialnum-3D-source-7">7</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_serialnumwrite(VALUE self, VALUE serialnumstr) {
+  <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
+  Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
+  <span style="color:#0a5;font-weight:bold">char</span> *serialnumc = RSTRING_PTR(serialnumstr);
+  <span style="color:#0a5;font-weight:bold">char</span> serialnum[<span style="color:#00D">100</span>];
+  strcpy(serialnumc, serialnum);
+  <span style="color:#080;font-weight:bold">return</span> INT2NUM(blink1_serialnumwrite(ins-&gt;dev, (uint8_t *)serialnum));
+}</pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-i-serverdown'></a>
+      <section class='method public-instance' id='method-method-i-serverdown'>
+        <h3 class='synopsis'>
+          <span class='name'>serverdown</span>
+          <span class='arguments'>(p1, p2)</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-serverdown-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-i-serverdown-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-serverdown-source-0" name="method-i-serverdown-source-0">0</a></strong>
+<a href="#method-i-serverdown-source-1" name="method-i-serverdown-source-1">1</a>
+<a href="#method-i-serverdown-source-2" name="method-i-serverdown-source-2">2</a>
+<a href="#method-i-serverdown-source-3" name="method-i-serverdown-source-3">3</a>
+<a href="#method-i-serverdown-source-4" name="method-i-serverdown-source-4">4</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_serverdown(VALUE self, VALUE on, VALUE millis) {
+  <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
+  Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
+  <span style="color:#080;font-weight:bold">return</span> INT2NUM(blink1_serverdown(ins-&gt;dev, RTEST(on) ? <span style="color:#00D">1</span> : <span style="color:#00D">0</span>, FIX2UINT(millis)));
+}</pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-i-set_rgb'></a>
+      <section class='method public-instance' id='method-method-i-set_rgb'>
+        <h3 class='synopsis'>
+          <span class='name'>set_rgb</span>
+          <span class='arguments'>(p1, p2, p3)</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-set_rgb-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-i-set_rgb-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-set_rgb-source-0" name="method-i-set_rgb-source-0">0</a></strong>
+<a href="#method-i-set_rgb-source-1" name="method-i-set_rgb-source-1">1</a>
+<a href="#method-i-set_rgb-source-2" name="method-i-set_rgb-source-2">2</a>
+<a href="#method-i-set_rgb-source-3" name="method-i-set_rgb-source-3">3</a>
+<a href="#method-i-set_rgb-source-4" name="method-i-set_rgb-source-4">4</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_setRGB(VALUE self, VALUE r, VALUE g, VALUE b) {
+  <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
+  Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
+  <span style="color:#080;font-weight:bold">return</span> INT2NUM(blink1_setRGB(ins-&gt;dev, FIX2UINT(r), FIX2UINT(g), FIX2UINT(b)));
+}</pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-i-stop'></a>
+      <section class='method public-instance' id='method-method-i-stop'>
+        <h3 class='synopsis'>
+          <span class='name'>stop</span>
+          <span class='arguments'>(p1)</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-stop-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-i-stop-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-stop-source-0" name="method-i-stop-source-0">0</a></strong>
+<a href="#method-i-stop-source-1" name="method-i-stop-source-1">1</a>
+<a href="#method-i-stop-source-2" name="method-i-stop-source-2">2</a>
+<a href="#method-i-stop-source-3" name="method-i-stop-source-3">3</a>
+<a href="#method-i-stop-source-4" name="method-i-stop-source-4">4</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_stop(VALUE self, VALUE pos) {
+  <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
+  Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
+  <span style="color:#080;font-weight:bold">return</span> INT2NUM(blink1_play(ins-&gt;dev, <span style="color:#00D">0</span>, FIX2UINT(pos)));
+}</pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-i-version'></a>
+      <section class='method public-instance' id='method-method-i-version'>
+        <h3 class='synopsis'>
+          <span class='name'>version</span>
+          <span class='arguments'>()</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-version-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-i-version-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-version-source-0" name="method-i-version-source-0">0</a></strong>
+<a href="#method-i-version-source-1" name="method-i-version-source-1">1</a>
+<a href="#method-i-version-source-2" name="method-i-version-source-2">2</a>
+<a href="#method-i-version-source-3" name="method-i-version-source-3">3</a>
+<a href="#method-i-version-source-4" name="method-i-version-source-4">4</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_getVersion(VALUE self) {
+  <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
+  Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
+  <span style="color:#080;font-weight:bold">return</span> INT2NUM(blink1_getVersion(ins-&gt;dev));
+}</pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+      <a name='method-i-write_pattern_line'></a>
+      <section class='method public-instance' id='method-method-i-write_pattern_line'>
+        <h3 class='synopsis'>
+          <span class='name'>write_pattern_line</span>
+          <span class='arguments'>(p1, p2, p3, p4, p5)</span>
+        </h3>
+        <div class='description'>
+          
+        </div>
+        <div class='source'>
+          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-write_pattern_line-source'>
+            <span class='show'>
+              <span class='icon-resize-full'></span>
+              Show
+            </span>
+            <span class='hide'>
+              <span class='icon-resize-small'></span>
+              Hide
+            </span>
+            Source
+          </a>
+          <div class='collapse' id='method-i-write_pattern_line-source'>
+            <table class="CodeRay"><tr>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-write_pattern_line-source-0" name="method-i-write_pattern_line-source-0">0</a></strong>
+<a href="#method-i-write_pattern_line-source-1" name="method-i-write_pattern_line-source-1">1</a>
+<a href="#method-i-write_pattern_line-source-2" name="method-i-write_pattern_line-source-2">2</a>
+<a href="#method-i-write_pattern_line-source-3" name="method-i-write_pattern_line-source-3">3</a>
+<a href="#method-i-write_pattern_line-source-4" name="method-i-write_pattern_line-source-4">4</a>
+</pre></td>
+  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_writePatternLine(VALUE self, VALUE fadeMillis, VALUE r, VALUE g, VALUE b, VALUE pos) {
+  <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
+  Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
+  <span style="color:#080;font-weight:bold">return</span> INT2NUM(blink1_writePatternLine(ins-&gt;dev, FIX2UINT(fadeMillis), FIX2UINT(r), FIX2UINT(g), FIX2UINT(b), FIX2UINT(pos)));
+}</pre></td>
+</tr></table>
+          </div>
+        </div>
+      </section>
+    </article>
+  </div>
+</div>
+      </div>
+    </section>
+  </div>
+  <div class='span3'>
+    <ul class='nav nav-list'>
+      <li class='nav-header'>Defined IN</li>
+      <li>
+        <a href="../files/lib/blink1_rb.html">lib/blink1.rb</a>
+      </li>
+      <li>
+        <a href="../files/lib/blink1/version_rb.html">lib/blink1/version.rb</a>
+      </li>
+      <li>
+        <a href="../files/ext/blink1/blink1_c.html">ext/blink1/blink1.c</a>
+      </li>
+      <li class='nav-header'>Parent</li>
+      <li>
+        <strong>
+          <a href="../files/lib/blink1_rb.html">blink1.rb</a>
+        </strong>
+      </li>
+      <li class='divider'></li>
+      <li class='nav-header'>Public Class</li>
+      <li><a href="#method-c-cached_count">cached_count</a></li>
+      <li><a href="#method-c-cached_path">cached_path</a></li>
+      <li><a href="#method-c-cached_serial">cached_serial</a></li>
+      <li><a href="#method-c-degamma">degamma</a></li>
+      <li><a href="#method-c-degamma_enabled">degamma_enabled</a></li>
+      <li><a href="#method-c-degamma_enabled-3D">degamma_enabled=</a></li>
+      <li><a href="#method-c-enumerate">enumerate</a></li>
+      <li><a href="#method-c-enumerate_vid_pid">enumerate_vid_pid</a></li>
+      <li><a href="#method-c-error_message">error_message</a></li>
+      <li><a href="#method-c-list">list</a></li>
+      <li><a href="#method-c-new">new</a></li>
+      <li><a href="#method-c-open">open</a></li>
+      <li><a href="#method-c-product_id">product_id</a></li>
+      <li><a href="#method-c-sleep">sleep</a></li>
+      <li><a href="#method-c-sort_paths">sort_paths</a></li>
+      <li><a href="#method-c-sort_serials">sort_serials</a></li>
+      <li><a href="#method-c-vendor_id">vendor_id</a></li>
+      <li class='nav-header'>Public Instance</li>
+      <li><a href="#method-i-5B-5D">[]</a></li>
+      <li><a href="#method-i-5B-5D-3D">[]=</a></li>
+      <li><a href="#method-i-blink">blink</a></li>
+      <li><a href="#method-i-close">close</a></li>
+      <li><a href="#attribute-i-delay_millis">delay_millis</a></li>
+      <li><a href="#method-i-eeread">eeread</a></li>
+      <li><a href="#method-i-eewrite">eewrite</a></li>
+      <li><a href="#method-i-fade_to_rgb">fade_to_rgb</a></li>
+      <li><a href="#attribute-i-millis">millis</a></li>
+      <li><a href="#method-i-off">off</a></li>
+      <li><a href="#method-i-on">on</a></li>
+      <li><a href="#method-i-open">open</a></li>
+      <li><a href="#method-i-open_by_id">open_by_id</a></li>
+      <li><a href="#method-i-open_by_path">open_by_path</a></li>
+      <li><a href="#method-i-open_by_serial">open_by_serial</a></li>
+      <li><a href="#method-i-opened-3F">opened?</a></li>
+      <li><a href="#method-i-play">play</a></li>
+      <li><a href="#method-i-random">random</a></li>
+      <li><a href="#method-i-read_pattern_line">read_pattern_line</a></li>
+      <li><a href="#method-i-serialnum">serialnum</a></li>
+      <li><a href="#method-i-serialnum-3D">serialnum=</a></li>
+      <li><a href="#method-i-serverdown">serverdown</a></li>
+      <li><a href="#method-i-set_rgb">set_rgb</a></li>
+      <li><a href="#method-i-stop">stop</a></li>
+      <li><a href="#method-i-version">version</a></li>
+      <li><a href="#method-i-write_pattern_line">write_pattern_line</a></li>
+    </ul>
+  </div>
+</div>
+      </div>
+    </div>
+    <footer>
+      <div class='container'>
+        <p>
+          Generated by
+          <a href="https://github.com/rdoc/rdoc">RDoc 3.12</a>
+          .
+        </p>
+        <p>
+          Generated with the
+          <a href="http://github.com/ngs/hanna-bootstrap">Hanna Bootstrap RDoc Generator 0.0.2</a>
+          .
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

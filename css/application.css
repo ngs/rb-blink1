@@ -1,0 +1,56 @@
+#main {
+  padding: 0 0 50px 0; }
+  @media (min-width: 980px) {
+    #main {
+      padding: 80px 0; } }
+
+.nav li a .parent {
+  opacity: 0.5; }
+
+.navbar .dropdown-menu {
+  max-height: 400px;
+  overflow: auto; }
+
+#search-results li strong, #search-results li span {
+  display: block; }
+#search-results li small {
+  font-size: 0.8em;
+  opacity: 0.5; }
+#search-results li strong b {
+  background: rgba(255, 255, 0, 0.3); }
+
+footer {
+  text-align: right;
+  padding: 20px 0; }
+  footer a {
+    color: #999999; }
+
+#methods section, #methods article {
+  padding-top: 50px;
+  margin-top: -30px; }
+  #methods section h2, #methods section h3, #methods article h2, #methods article h3 {
+    margin: 0; }
+#methods .synopsis .arguments {
+  font-size: 80%;
+  font-weight: normal;
+  color: #999999; }
+#methods .source .collapse {
+  overflow: auto; }
+#methods .source .source-toggle {
+  margin-bottom: 10px; }
+  #methods .source .source-toggle .hide, #methods .source .source-toggle.collapsed .show {
+    display: inline; }
+  #methods .source .source-toggle .show, #methods .source .source-toggle.collapsed .hide {
+    display: none; }
+
+h1.name .type {
+  font-size: 80%;
+  font-weight: normal;
+  color: #999999; }
+
+#class-list .type {
+  font-size: 15px;
+  color: #999999; }
+#class-list a {
+  font-weight: bold;
+  font-size: 18px; }
