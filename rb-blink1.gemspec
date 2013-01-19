@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ['Atsushi Nagase']
   s.email       = ['a@ngs.io']
-  s.homepage    = "http://github.com/ngs/rb-blink1"
-  s.summary     = "Ruby interface for blink(1)"
+  s.homepage    = "http://ngs.github.com/rb-blink1"
+  s.summary     = "A Ruby interface for blink(1)"
   s.description = "Controls blink(1)"
   s.requirements << "libusb, version 1.0 or greater"
 
@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'guard-rake'
   s.add_development_dependency 'guard-rspec'
   s.add_development_dependency 'guard-spork'
+  s.add_development_dependency 'hanna-bootstrap', '>= 0.0.3'
   s.add_development_dependency 'rb-fsevent'
   s.add_development_dependency 'rdoc'
   s.add_development_dependency 'rspec'

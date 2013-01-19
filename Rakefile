@@ -19,7 +19,11 @@ RSpec::Core::RakeTask.new
 
 RDoc::Task.new do |rdoc|
 
-  rdoc.main = "README.rdoc"
   rdoc.rdoc_files.include("README.rdoc", "lib/**/*.rb", "ext/blink1/blink1.c")
+  rdoc.generator  = 'bootstrap'
+  rdoc.main       = "README.rdoc"
+  rdoc.rdoc_dir   = 'html'
+  rdoc.title      = 'rb-blink1'
+  rdoc.options   << '--line-numbers'
 
 end
