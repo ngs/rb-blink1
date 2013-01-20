@@ -67,11 +67,9 @@
     <section id='content'>
       <div id='text'>
         <div id='description'>
-<pre>UNSPPORT</pre>
-
-<p>int blink1_write( hid_device* dev, void* buf, int len); int blink1_read(
-hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
-*dev, char* buf); //int blink1_playPattern(hid_device *dev,,);</p></div>
+          
+          <p>A Ruby interface for <a href="http://blink1.thingm.com/">blink(1)</a>.</p>
+        </div>
         <div id='context'>
 </div>
 <div id='section'>
@@ -84,7 +82,10 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
           <td>=</td>
           <td class='context-item-value'>"0.0.5"</td>
           <td>&nbsp;</td>
-          <td class='context-item-desc'></td>
+          <td class='context-item-desc'>
+            
+            <p>Version of this module.</p>
+          </td>
         </tr>
       </table>
     </div>
@@ -98,14 +99,20 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
             <a name='attribute-i-delay_millis'>delay_millis</a>
           </td>
           <td class='context-item-value'>[RW]</td>
-          <td class='context-item-desc'></td>
+          <td class='context-item-desc'>
+            
+            <p>Delay to next color in millisecond.</p>
+          </td>
         </tr>
         <tr class='top-aligned-row context-row'>
           <td class='context-item-name'>
             <a name='attribute-i-millis'>millis</a>
           </td>
           <td class='context-item-value'>[RW]</td>
-          <td class='context-item-desc'></td>
+          <td class='context-item-desc'>
+            
+            <p>Fade duration in millisecond.</p>
+          </td>
         </tr>
       </table>
     </div>
@@ -116,11 +123,13 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
       <a name='method-c-cached_count'></a>
       <section class='method public-class' id='method-method-c-cached_count'>
         <h3 class='synopsis'>
-          <span class='name'>cached_count</span>
-          <span class='arguments'>()</span>
+          <span class='name'>
+            <div><span class="name">Blink1.cached_serial</span> <span class="arguments">-> integer</span></div>
+          </span>
         </h3>
         <div class='description'>
           
+          <p>Return cached device serial id by index.</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-cached_count-source'>
@@ -135,26 +144,24 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
             Source
           </a>
           <div class='collapse' id='method-c-cached_count-source'>
-            <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-c-cached_count-source-0" name="method-c-cached_count-source-0">0</a></strong>
-<a href="#method-c-cached_count-source-1" name="method-c-cached_count-source-1">1</a>
-<a href="#method-c-cached_count-source-2" name="method-c-cached_count-source-2">2</a>
-</pre></td>
-  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_getCachedCount(VALUE self) {
+            <div class="CodeRay">
+  <div class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_getCachedCount(VALUE self) {
   <span style="color:#080;font-weight:bold">return</span> INT2NUM(blink1_getCachedCount());
-}</pre></td>
-</tr></table>
+}</pre></div>
+</div>
           </div>
         </div>
       </section>
       <a name='method-c-cached_path'></a>
       <section class='method public-class' id='method-method-c-cached_path'>
         <h3 class='synopsis'>
-          <span class='name'>cached_path</span>
-          <span class='arguments'>(p1)</span>
+          <span class='name'>
+            <div><span class="name">cached_path</span> <span class="arguments">(index) -> string</span></div>
+          </span>
         </h3>
         <div class='description'>
           
+          <p>Return cached device path by index.</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-cached_path-source'>
@@ -169,26 +176,24 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
             Source
           </a>
           <div class='collapse' id='method-c-cached_path-source'>
-            <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-c-cached_path-source-0" name="method-c-cached_path-source-0">0</a></strong>
-<a href="#method-c-cached_path-source-1" name="method-c-cached_path-source-1">1</a>
-<a href="#method-c-cached_path-source-2" name="method-c-cached_path-source-2">2</a>
-</pre></td>
-  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_blink1_getCachedPath(VALUE self, VALUE i) {
+            <div class="CodeRay">
+  <div class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_blink1_getCachedPath(VALUE self, VALUE i) {
   <span style="color:#080;font-weight:bold">return</span> rb_str_new2(blink1_getCachedPath(FIX2INT(i)));
-}</pre></td>
-</tr></table>
+}</pre></div>
+</div>
           </div>
         </div>
       </section>
       <a name='method-c-cached_serial'></a>
       <section class='method public-class' id='method-method-c-cached_serial'>
         <h3 class='synopsis'>
-          <span class='name'>cached_serial</span>
-          <span class='arguments'>(p1)</span>
+          <span class='name'>
+            <div><span class="name">cached_serial</span> <span class="arguments">(index) -> string</span></div>
+          </span>
         </h3>
         <div class='description'>
           
+          <p>Return cached device serial id by index.</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-cached_serial-source'>
@@ -203,21 +208,14 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
             Source
           </a>
           <div class='collapse' id='method-c-cached_serial-source'>
-            <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-c-cached_serial-source-0" name="method-c-cached_serial-source-0">0</a></strong>
-<a href="#method-c-cached_serial-source-1" name="method-c-cached_serial-source-1">1</a>
-<a href="#method-c-cached_serial-source-2" name="method-c-cached_serial-source-2">2</a>
-<a href="#method-c-cached_serial-source-3" name="method-c-cached_serial-source-3">3</a>
-<a href="#method-c-cached_serial-source-4" name="method-c-cached_serial-source-4">4</a>
-<a href="#method-c-cached_serial-source-5" name="method-c-cached_serial-source-5">5</a>
-</pre></td>
-  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_getCachedSerial(VALUE self, VALUE i) {
+            <div class="CodeRay">
+  <div class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_getCachedSerial(VALUE self, VALUE i) {
   <span style="color:#088;font-weight:bold">const</span> wchar_t *ret = blink1_getCachedSerial(FIX2INT(i));
   <span style="color:#0a5;font-weight:bold">char</span> dest[<span style="color:#00D">16</span>] = {<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#b0b">\0</span><span style="color:#710">&quot;</span></span>};
   <span style="color:#0a5;font-weight:bold">int</span> t = wcstombs(dest, ret, <span style="color:#080;font-weight:bold">sizeof</span>(ret));
   <span style="color:#080;font-weight:bold">return</span> rb_str_new2(dest);
-}</pre></td>
-</tr></table>
+}</pre></div>
+</div>
           </div>
         </div>
       </section>
@@ -229,6 +227,7 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
         </h3>
         <div class='description'>
           
+          <p>Return gamma corrected value for a RGB component.</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-degamma-source'>
@@ -243,15 +242,11 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
             Source
           </a>
           <div class='collapse' id='method-c-degamma-source'>
-            <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-c-degamma-source-0" name="method-c-degamma-source-0">0</a></strong>
-<a href="#method-c-degamma-source-1" name="method-c-degamma-source-1">1</a>
-<a href="#method-c-degamma-source-2" name="method-c-degamma-source-2">2</a>
-</pre></td>
-  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_degamma(VALUE self, VALUE i) {
+            <div class="CodeRay">
+  <div class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_degamma(VALUE self, VALUE i) {
   <span style="color:#080;font-weight:bold">return</span> INT2NUM(blink1_degamma(FIX2INT(i)));
-}</pre></td>
-</tr></table>
+}</pre></div>
+</div>
           </div>
         </div>
       </section>
@@ -263,6 +258,7 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
         </h3>
         <div class='description'>
           
+          <p>Return degamma enabled.</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-degamma_enabled-source'>
@@ -277,15 +273,11 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
             Source
           </a>
           <div class='collapse' id='method-c-degamma_enabled-source'>
-            <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-c-degamma_enabled-source-0" name="method-c-degamma_enabled-source-0">0</a></strong>
-<a href="#method-c-degamma_enabled-source-1" name="method-c-degamma_enabled-source-1">1</a>
-<a href="#method-c-degamma_enabled-source-2" name="method-c-degamma_enabled-source-2">2</a>
-</pre></td>
-  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_getDegammaEnabled(VALUE self) {
+            <div class="CodeRay">
+  <div class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_getDegammaEnabled(VALUE self) {
   <span style="color:#080;font-weight:bold">return</span> degamma == <span style="color:#00D">1</span> ? Qtrue : Qfalse;
-}</pre></td>
-</tr></table>
+}</pre></div>
+</div>
           </div>
         </div>
       </section>
@@ -297,6 +289,7 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
         </h3>
         <div class='description'>
           
+          <p>Set degamma enabled.</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-degamma_enabled-3D-source'>
@@ -311,19 +304,8 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
             Source
           </a>
           <div class='collapse' id='method-c-degamma_enabled-3D-source'>
-            <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-c-degamma_enabled-3D-source-0" name="method-c-degamma_enabled-3D-source-0">0</a></strong>
-<a href="#method-c-degamma_enabled-3D-source-1" name="method-c-degamma_enabled-3D-source-1">1</a>
-<a href="#method-c-degamma_enabled-3D-source-2" name="method-c-degamma_enabled-3D-source-2">2</a>
-<a href="#method-c-degamma_enabled-3D-source-3" name="method-c-degamma_enabled-3D-source-3">3</a>
-<a href="#method-c-degamma_enabled-3D-source-4" name="method-c-degamma_enabled-3D-source-4">4</a>
-<a href="#method-c-degamma_enabled-3D-source-5" name="method-c-degamma_enabled-3D-source-5">5</a>
-<a href="#method-c-degamma_enabled-3D-source-6" name="method-c-degamma_enabled-3D-source-6">6</a>
-<a href="#method-c-degamma_enabled-3D-source-7" name="method-c-degamma_enabled-3D-source-7">7</a>
-<a href="#method-c-degamma_enabled-3D-source-8" name="method-c-degamma_enabled-3D-source-8">8</a>
-<a href="#method-c-degamma_enabled-3D-source-9" name="method-c-degamma_enabled-3D-source-9">9</a>
-</pre></td>
-  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_setDegammaEnabled(VALUE self, VALUE enabled) {
+            <div class="CodeRay">
+  <div class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_setDegammaEnabled(VALUE self, VALUE enabled) {
   <span style="color:#080;font-weight:bold">if</span>(RTEST(enabled)) {
     degamma = <span style="color:#00D">1</span>;
     blink1_enableDegamma();
@@ -332,8 +314,8 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
     blink1_disableDegamma();
   }
   <span style="color:#080;font-weight:bold">return</span> Qnil;
-}</pre></td>
-</tr></table>
+}</pre></div>
+</div>
           </div>
         </div>
       </section>
@@ -345,6 +327,7 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
         </h3>
         <div class='description'>
           
+<p>Get all devices by default <code>product_id</code>, <code>vendor_id</code>.</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-enumerate-source'>
@@ -359,26 +342,26 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
             Source
           </a>
           <div class='collapse' id='method-c-enumerate-source'>
-            <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-c-enumerate-source-0" name="method-c-enumerate-source-0">0</a></strong>
-<a href="#method-c-enumerate-source-1" name="method-c-enumerate-source-1">1</a>
-<a href="#method-c-enumerate-source-2" name="method-c-enumerate-source-2">2</a>
-</pre></td>
-  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_enumerate(VALUE self) {
+            <div class="CodeRay">
+  <div class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_enumerate(VALUE self) {
   <span style="color:#080;font-weight:bold">return</span> INT2NUM(blink1_enumerate());
-}</pre></td>
-</tr></table>
+}</pre></div>
+</div>
           </div>
         </div>
       </section>
       <a name='method-c-enumerate_vid_pid'></a>
       <section class='method public-class' id='method-method-c-enumerate_vid_pid'>
         <h3 class='synopsis'>
-          <span class='name'>enumerate_vid_pid</span>
-          <span class='arguments'>(p1, p2)</span>
+          <span class='name'>
+            <div><span class="name">enumerate_by_vid_pid</span> <span class="arguments">(vid, pid) -> integer</span></div>
+          </span>
         </h3>
         <div class='description'>
           
+          <p>Get all matching devices by VID/PID pair.</p>
+          
+          <p>Return number of devices.</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-enumerate_vid_pid-source'>
@@ -393,51 +376,11 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
             Source
           </a>
           <div class='collapse' id='method-c-enumerate_vid_pid-source'>
-            <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-c-enumerate_vid_pid-source-0" name="method-c-enumerate_vid_pid-source-0">0</a></strong>
-<a href="#method-c-enumerate_vid_pid-source-1" name="method-c-enumerate_vid_pid-source-1">1</a>
-<a href="#method-c-enumerate_vid_pid-source-2" name="method-c-enumerate_vid_pid-source-2">2</a>
-</pre></td>
-  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_enumerateByVidPid(VALUE self, VALUE vid, VALUE pid) {
+            <div class="CodeRay">
+  <div class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_enumerateByVidPid(VALUE self, VALUE vid, VALUE pid) {
   <span style="color:#080;font-weight:bold">return</span> INT2NUM(blink1_enumerateByVidPid(FIX2INT(vid), FIX2INT(pid)));
-}</pre></td>
-</tr></table>
-          </div>
-        </div>
-      </section>
-      <a name='method-c-error_message'></a>
-      <section class='method public-class' id='method-method-c-error_message'>
-        <h3 class='synopsis'>
-          <span class='name'>error_message</span>
-          <span class='arguments'>(p1)</span>
-        </h3>
-        <div class='description'>
-          
-        </div>
-        <div class='source'>
-          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-error_message-source'>
-            <span class='show'>
-              <span class='icon-resize-full'></span>
-              Show
-            </span>
-            <span class='hide'>
-              <span class='icon-resize-small'></span>
-              Hide
-            </span>
-            Source
-          </a>
-          <div class='collapse' id='method-c-error_message-source'>
-            <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-c-error_message-source-0" name="method-c-error_message-source-0">0</a></strong>
-<a href="#method-c-error_message-source-1" name="method-c-error_message-source-1">1</a>
-<a href="#method-c-error_message-source-2" name="method-c-error_message-source-2">2</a>
-<a href="#method-c-error_message-source-3" name="method-c-error_message-source-3">3</a>
-</pre></td>
-  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_error_msg(VALUE self, VALUE code) {
-  <span style="color:#0a5;font-weight:bold">char</span> *msg = blink1_error_msg(FIX2INT(code));
-  <span style="color:#080;font-weight:bold">return</span> msg == <span style="color:#069">NULL</span> ? Qnil : rb_str_new2(msg);
-}</pre></td>
-</tr></table>
+}</pre></div>
+</div>
           </div>
         </div>
       </section>
@@ -449,6 +392,8 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
         </h3>
         <div class='description'>
           
+<p>Returns array of hash with keys <code>:id</code>, <code>:serial</code>,
+<code>:path</code></p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-list-source'>
@@ -464,20 +409,20 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
           </a>
           <div class='collapse' id='method-c-list-source'>
             <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#method-c-list-source-67" name="method-c-list-source-67">67</a>
-<a href="#method-c-list-source-68" name="method-c-list-source-68">68</a>
-<a href="#method-c-list-source-69" name="method-c-list-source-69">69</a>
-<strong><a href="#method-c-list-source-70" name="method-c-list-source-70">70</a></strong>
-<a href="#method-c-list-source-71" name="method-c-list-source-71">71</a>
-<a href="#method-c-list-source-72" name="method-c-list-source-72">72</a>
-<a href="#method-c-list-source-73" name="method-c-list-source-73">73</a>
-<a href="#method-c-list-source-74" name="method-c-list-source-74">74</a>
-<a href="#method-c-list-source-75" name="method-c-list-source-75">75</a>
-<a href="#method-c-list-source-76" name="method-c-list-source-76">76</a>
-<a href="#method-c-list-source-77" name="method-c-list-source-77">77</a>
-<a href="#method-c-list-source-78" name="method-c-list-source-78">78</a>
-<a href="#method-c-list-source-79" name="method-c-list-source-79">79</a>
-<strong><a href="#method-c-list-source-80" name="method-c-list-source-80">80</a></strong>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-c-list-source-130" name="method-c-list-source-130">130</a></strong>
+<a href="#method-c-list-source-131" name="method-c-list-source-131">131</a>
+<a href="#method-c-list-source-132" name="method-c-list-source-132">132</a>
+<a href="#method-c-list-source-133" name="method-c-list-source-133">133</a>
+<a href="#method-c-list-source-134" name="method-c-list-source-134">134</a>
+<a href="#method-c-list-source-135" name="method-c-list-source-135">135</a>
+<a href="#method-c-list-source-136" name="method-c-list-source-136">136</a>
+<a href="#method-c-list-source-137" name="method-c-list-source-137">137</a>
+<a href="#method-c-list-source-138" name="method-c-list-source-138">138</a>
+<a href="#method-c-list-source-139" name="method-c-list-source-139">139</a>
+<strong><a href="#method-c-list-source-140" name="method-c-list-source-140">140</a></strong>
+<a href="#method-c-list-source-141" name="method-c-list-source-141">141</a>
+<a href="#method-c-list-source-142" name="method-c-list-source-142">142</a>
+<a href="#method-c-list-source-143" name="method-c-list-source-143">143</a>
 </pre></td>
   <td class="code"><pre><span style="color:#080;font-weight:bold">def</span> <span style="color:#069">self</span>.<span style="color:#06B;font-weight:bold">list</span>
   count = enumerate_vid_pid(vendor_id, product_id)
@@ -500,11 +445,17 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
       <a name='method-c-new'></a>
       <section class='method public-class' id='method-method-c-new'>
         <h3 class='synopsis'>
-          <span class='name'>new</span>
-          <span class='arguments'>(option = nil)</span>
+          <span class='name'>
+            <div><span class="name">new</span> <span class="arguments">( {Fixnum} id )</span></div>
+            <div><span class="name">new</span> <span class="arguments">( {Boolean} auto_open )</span></div>
+            <div><span class="name">new</span> <span class="arguments">( {String} serial_id )</span></div>
+            <div><span class="name">new</span> <span class="arguments">( :path => <em>device_path</em> )</span></div>
+            <div><span class="name">new</span> <span class="arguments">( :serial => <em>serial_id</em> )</span></div>
+          </span>
         </h3>
         <div class='description'>
           
+<p>Returns new instance of <code>Blink1</code></p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-new-source'>
@@ -520,24 +471,26 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
           </a>
           <div class='collapse' id='method-c-new-source'>
             <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#method-c-new-source-9" name="method-c-new-source-9">9</a>
-<strong><a href="#method-c-new-source-10" name="method-c-new-source-10">10</a></strong>
-<a href="#method-c-new-source-11" name="method-c-new-source-11">11</a>
-<a href="#method-c-new-source-12" name="method-c-new-source-12">12</a>
-<a href="#method-c-new-source-13" name="method-c-new-source-13">13</a>
-<a href="#method-c-new-source-14" name="method-c-new-source-14">14</a>
-<a href="#method-c-new-source-15" name="method-c-new-source-15">15</a>
-<a href="#method-c-new-source-16" name="method-c-new-source-16">16</a>
-<a href="#method-c-new-source-17" name="method-c-new-source-17">17</a>
-<a href="#method-c-new-source-18" name="method-c-new-source-18">18</a>
-<a href="#method-c-new-source-19" name="method-c-new-source-19">19</a>
-<strong><a href="#method-c-new-source-20" name="method-c-new-source-20">20</a></strong>
-<a href="#method-c-new-source-21" name="method-c-new-source-21">21</a>
-<a href="#method-c-new-source-22" name="method-c-new-source-22">22</a>
-<a href="#method-c-new-source-23" name="method-c-new-source-23">23</a>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#method-c-new-source-23" name="method-c-new-source-23">23</a>
 <a href="#method-c-new-source-24" name="method-c-new-source-24">24</a>
 <a href="#method-c-new-source-25" name="method-c-new-source-25">25</a>
 <a href="#method-c-new-source-26" name="method-c-new-source-26">26</a>
+<a href="#method-c-new-source-27" name="method-c-new-source-27">27</a>
+<a href="#method-c-new-source-28" name="method-c-new-source-28">28</a>
+<a href="#method-c-new-source-29" name="method-c-new-source-29">29</a>
+<strong><a href="#method-c-new-source-30" name="method-c-new-source-30">30</a></strong>
+<a href="#method-c-new-source-31" name="method-c-new-source-31">31</a>
+<a href="#method-c-new-source-32" name="method-c-new-source-32">32</a>
+<a href="#method-c-new-source-33" name="method-c-new-source-33">33</a>
+<a href="#method-c-new-source-34" name="method-c-new-source-34">34</a>
+<a href="#method-c-new-source-35" name="method-c-new-source-35">35</a>
+<a href="#method-c-new-source-36" name="method-c-new-source-36">36</a>
+<a href="#method-c-new-source-37" name="method-c-new-source-37">37</a>
+<a href="#method-c-new-source-38" name="method-c-new-source-38">38</a>
+<a href="#method-c-new-source-39" name="method-c-new-source-39">39</a>
+<strong><a href="#method-c-new-source-40" name="method-c-new-source-40">40</a></strong>
+<a href="#method-c-new-source-41" name="method-c-new-source-41">41</a>
+<a href="#method-c-new-source-42" name="method-c-new-source-42">42</a>
 </pre></td>
   <td class="code"><pre><span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">initialize</span> option = <span style="color:#069">nil</span>
   <span style="color:#080;font-weight:bold">case</span> option
@@ -553,6 +506,8 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
     <span style="color:#080;font-weight:bold">end</span>
   <span style="color:#080;font-weight:bold">when</span> <span style="color:#036;font-weight:bold">String</span>
     open_by_serial(option)
+  <span style="color:#080;font-weight:bold">else</span>
+    open <span style="color:#080;font-weight:bold">if</span> option == <span style="color:#069">true</span>
   <span style="color:#080;font-weight:bold">end</span>
   <span style="color:#33B">@millis</span> ||= <span style="color:#00D">300</span>
   <span style="color:#33B">@delay_millis</span> ||= <span style="color:#00D">500</span>
@@ -564,11 +519,19 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
       <a name='method-c-open'></a>
       <section class='method public-class' id='method-method-c-open'>
         <h3 class='synopsis'>
-          <span class='name'>open</span>
-          <span class='arguments'>(option = nil, &block)</span>
+          <span class='name'>
+            <div><span class="name">open</span> <span class="arguments">( {Fixnum} id ) { |blink1| }</span></div>
+            <div><span class="name">open</span> <span class="arguments">( {Boolean} autoopen ) { |blink1| }</span></div>
+            <div><span class="name">open</span> <span class="arguments">( {String} serial_id ) { |blink1| }</span></div>
+            <div><span class="name">open</span> <span class="arguments">( :path => <em>device_path</em> ) { |blink1| }</span></div>
+            <div><span class="name">open</span> <span class="arguments">( :serial => <em>serial_id</em> ) { |blink1| }</span></div>
+          </span>
         </h3>
         <div class='description'>
           
+<p>If block given, yieds new instance of <code>Blink1</code>.</p>
+
+<p>If not, returns new <code>Blink1</code></p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-open-source'>
@@ -584,19 +547,19 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
           </a>
           <div class='collapse' id='method-c-open-source'>
             <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#method-c-open-source-82" name="method-c-open-source-82">82</a>
-<a href="#method-c-open-source-83" name="method-c-open-source-83">83</a>
-<a href="#method-c-open-source-84" name="method-c-open-source-84">84</a>
-<a href="#method-c-open-source-85" name="method-c-open-source-85">85</a>
-<a href="#method-c-open-source-86" name="method-c-open-source-86">86</a>
-<a href="#method-c-open-source-87" name="method-c-open-source-87">87</a>
-<a href="#method-c-open-source-88" name="method-c-open-source-88">88</a>
-<a href="#method-c-open-source-89" name="method-c-open-source-89">89</a>
-<strong><a href="#method-c-open-source-90" name="method-c-open-source-90">90</a></strong>
-<a href="#method-c-open-source-91" name="method-c-open-source-91">91</a>
-<a href="#method-c-open-source-92" name="method-c-open-source-92">92</a>
-<a href="#method-c-open-source-93" name="method-c-open-source-93">93</a>
-<a href="#method-c-open-source-94" name="method-c-open-source-94">94</a>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#method-c-open-source-56" name="method-c-open-source-56">56</a>
+<a href="#method-c-open-source-57" name="method-c-open-source-57">57</a>
+<a href="#method-c-open-source-58" name="method-c-open-source-58">58</a>
+<a href="#method-c-open-source-59" name="method-c-open-source-59">59</a>
+<strong><a href="#method-c-open-source-60" name="method-c-open-source-60">60</a></strong>
+<a href="#method-c-open-source-61" name="method-c-open-source-61">61</a>
+<a href="#method-c-open-source-62" name="method-c-open-source-62">62</a>
+<a href="#method-c-open-source-63" name="method-c-open-source-63">63</a>
+<a href="#method-c-open-source-64" name="method-c-open-source-64">64</a>
+<a href="#method-c-open-source-65" name="method-c-open-source-65">65</a>
+<a href="#method-c-open-source-66" name="method-c-open-source-66">66</a>
+<a href="#method-c-open-source-67" name="method-c-open-source-67">67</a>
+<a href="#method-c-open-source-68" name="method-c-open-source-68">68</a>
 </pre></td>
   <td class="code"><pre><span style="color:#080;font-weight:bold">def</span> <span style="color:#069">self</span>.<span style="color:#06B;font-weight:bold">open</span> option = <span style="color:#069">nil</span>, &amp;block
   b = <span style="color:#069">self</span>.new(option)
@@ -623,6 +586,7 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
         </h3>
         <div class='description'>
           
+          <p>Return product ID</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-product_id-source'>
@@ -637,15 +601,11 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
             Source
           </a>
           <div class='collapse' id='method-c-product_id-source'>
-            <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-c-product_id-source-0" name="method-c-product_id-source-0">0</a></strong>
-<a href="#method-c-product_id-source-1" name="method-c-product_id-source-1">1</a>
-<a href="#method-c-product_id-source-2" name="method-c-product_id-source-2">2</a>
-</pre></td>
-  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_pid(VALUE self) {
+            <div class="CodeRay">
+  <div class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_pid(VALUE self) {
   <span style="color:#080;font-weight:bold">return</span> INT2NUM(blink1_pid());
-}</pre></td>
-</tr></table>
+}</pre></div>
+</div>
           </div>
         </div>
       </section>
@@ -657,6 +617,7 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
         </h3>
         <div class='description'>
           
+          <p>Sleeps for milliseconds.</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-sleep-source'>
@@ -671,17 +632,12 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
             Source
           </a>
           <div class='collapse' id='method-c-sleep-source'>
-            <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-c-sleep-source-0" name="method-c-sleep-source-0">0</a></strong>
-<a href="#method-c-sleep-source-1" name="method-c-sleep-source-1">1</a>
-<a href="#method-c-sleep-source-2" name="method-c-sleep-source-2">2</a>
-<a href="#method-c-sleep-source-3" name="method-c-sleep-source-3">3</a>
-</pre></td>
-  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_sleep(VALUE self, VALUE delayMillis) {
+            <div class="CodeRay">
+  <div class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_sleep(VALUE self, VALUE delayMillis) {
   blink1_sleep(FIX2UINT(delayMillis));
   <span style="color:#080;font-weight:bold">return</span> Qnil;
-}</pre></td>
-</tr></table>
+}</pre></div>
+</div>
           </div>
         </div>
       </section>
@@ -693,6 +649,7 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
         </h3>
         <div class='description'>
           
+          <p>Sort cached device by path.</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-sort_paths-source'>
@@ -707,17 +664,12 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
             Source
           </a>
           <div class='collapse' id='method-c-sort_paths-source'>
-            <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-c-sort_paths-source-0" name="method-c-sort_paths-source-0">0</a></strong>
-<a href="#method-c-sort_paths-source-1" name="method-c-sort_paths-source-1">1</a>
-<a href="#method-c-sort_paths-source-2" name="method-c-sort_paths-source-2">2</a>
-<a href="#method-c-sort_paths-source-3" name="method-c-sort_paths-source-3">3</a>
-</pre></td>
-  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_sortPaths(VALUE self) {
+            <div class="CodeRay">
+  <div class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_sortPaths(VALUE self) {
   blink1_sortPaths();
   <span style="color:#080;font-weight:bold">return</span> Qnil;
-}</pre></td>
-</tr></table>
+}</pre></div>
+</div>
           </div>
         </div>
       </section>
@@ -729,6 +681,7 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
         </h3>
         <div class='description'>
           
+          <p>Sort cached device by serial id.</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-sort_serials-source'>
@@ -743,17 +696,12 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
             Source
           </a>
           <div class='collapse' id='method-c-sort_serials-source'>
-            <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-c-sort_serials-source-0" name="method-c-sort_serials-source-0">0</a></strong>
-<a href="#method-c-sort_serials-source-1" name="method-c-sort_serials-source-1">1</a>
-<a href="#method-c-sort_serials-source-2" name="method-c-sort_serials-source-2">2</a>
-<a href="#method-c-sort_serials-source-3" name="method-c-sort_serials-source-3">3</a>
-</pre></td>
-  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_sortSerials(VALUE self) {
+            <div class="CodeRay">
+  <div class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_sortSerials(VALUE self) {
   blink1_sortSerials();
   <span style="color:#080;font-weight:bold">return</span> Qnil;
-}</pre></td>
-</tr></table>
+}</pre></div>
+</div>
           </div>
         </div>
       </section>
@@ -765,6 +713,7 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
         </h3>
         <div class='description'>
           
+          <p>Return vendor ID</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-c-vendor_id-source'>
@@ -779,15 +728,11 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
             Source
           </a>
           <div class='collapse' id='method-c-vendor_id-source'>
-            <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-c-vendor_id-source-0" name="method-c-vendor_id-source-0">0</a></strong>
-<a href="#method-c-vendor_id-source-1" name="method-c-vendor_id-source-1">1</a>
-<a href="#method-c-vendor_id-source-2" name="method-c-vendor_id-source-2">2</a>
-</pre></td>
-  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_vid(VALUE self) {
+            <div class="CodeRay">
+  <div class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_vid(VALUE self) {
   <span style="color:#080;font-weight:bold">return</span> INT2NUM(blink1_vid());
-}</pre></td>
-</tr></table>
+}</pre></div>
+</div>
           </div>
         </div>
       </section>
@@ -802,6 +747,7 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
         </h3>
         <div class='description'>
           
+<p>Alias for <code>read_pattern_line</code>.</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-5B-5D-source'>
@@ -817,9 +763,9 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
           </a>
           <div class='collapse' id='method-i-5B-5D-source'>
             <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#method-i-5B-5D-source-55" name="method-i-5B-5D-source-55">55</a>
-<a href="#method-i-5B-5D-source-56" name="method-i-5B-5D-source-56">56</a>
-<a href="#method-i-5B-5D-source-57" name="method-i-5B-5D-source-57">57</a>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#method-i-5B-5D-source-112" name="method-i-5B-5D-source-112">112</a>
+<a href="#method-i-5B-5D-source-113" name="method-i-5B-5D-source-113">113</a>
+<a href="#method-i-5B-5D-source-114" name="method-i-5B-5D-source-114">114</a>
 </pre></td>
   <td class="code"><pre><span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">[]</span> index
   <span style="color:#069">self</span>.read_pattern_line(index)
@@ -836,6 +782,8 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
         </h3>
         <div class='description'>
           
+<p>Write pattern line with hash with key <code>fade_millis</code>,
+<code>r</code>, <code>g</code>, <code>b</code>.</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-5B-5D-3D-source'>
@@ -851,13 +799,13 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
           </a>
           <div class='collapse' id='method-i-5B-5D-3D-source'>
             <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#method-i-5B-5D-3D-source-59" name="method-i-5B-5D-3D-source-59">59</a>
-<strong><a href="#method-i-5B-5D-3D-source-60" name="method-i-5B-5D-3D-source-60">60</a></strong>
-<a href="#method-i-5B-5D-3D-source-61" name="method-i-5B-5D-3D-source-61">61</a>
-<a href="#method-i-5B-5D-3D-source-62" name="method-i-5B-5D-3D-source-62">62</a>
-<a href="#method-i-5B-5D-3D-source-63" name="method-i-5B-5D-3D-source-63">63</a>
-<a href="#method-i-5B-5D-3D-source-64" name="method-i-5B-5D-3D-source-64">64</a>
-<a href="#method-i-5B-5D-3D-source-65" name="method-i-5B-5D-3D-source-65">65</a>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#method-i-5B-5D-3D-source-119" name="method-i-5B-5D-3D-source-119">119</a>
+<strong><a href="#method-i-5B-5D-3D-source-120" name="method-i-5B-5D-3D-source-120">120</a></strong>
+<a href="#method-i-5B-5D-3D-source-121" name="method-i-5B-5D-3D-source-121">121</a>
+<a href="#method-i-5B-5D-3D-source-122" name="method-i-5B-5D-3D-source-122">122</a>
+<a href="#method-i-5B-5D-3D-source-123" name="method-i-5B-5D-3D-source-123">123</a>
+<a href="#method-i-5B-5D-3D-source-124" name="method-i-5B-5D-3D-source-124">124</a>
+<a href="#method-i-5B-5D-3D-source-125" name="method-i-5B-5D-3D-source-125">125</a>
 </pre></td>
   <td class="code"><pre><span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">[]=</span> index, prop
   fade_millis = prop[<span style="color:#A60">:fade_millis</span>] || prop[<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">fade_millis</span><span style="color:#710">'</span></span>]
@@ -878,6 +826,7 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
         </h3>
         <div class='description'>
           
+<p>Blink with RGB value for <code>times</code>.</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-blink-source'>
@@ -893,14 +842,14 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
           </a>
           <div class='collapse' id='method-i-blink-source'>
             <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#method-i-blink-source-28" name="method-i-blink-source-28">28</a>
-<a href="#method-i-blink-source-29" name="method-i-blink-source-29">29</a>
-<strong><a href="#method-i-blink-source-30" name="method-i-blink-source-30">30</a></strong>
-<a href="#method-i-blink-source-31" name="method-i-blink-source-31">31</a>
-<a href="#method-i-blink-source-32" name="method-i-blink-source-32">32</a>
-<a href="#method-i-blink-source-33" name="method-i-blink-source-33">33</a>
-<a href="#method-i-blink-source-34" name="method-i-blink-source-34">34</a>
-<a href="#method-i-blink-source-35" name="method-i-blink-source-35">35</a>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#method-i-blink-source-73" name="method-i-blink-source-73">73</a>
+<a href="#method-i-blink-source-74" name="method-i-blink-source-74">74</a>
+<a href="#method-i-blink-source-75" name="method-i-blink-source-75">75</a>
+<a href="#method-i-blink-source-76" name="method-i-blink-source-76">76</a>
+<a href="#method-i-blink-source-77" name="method-i-blink-source-77">77</a>
+<a href="#method-i-blink-source-78" name="method-i-blink-source-78">78</a>
+<a href="#method-i-blink-source-79" name="method-i-blink-source-79">79</a>
+<strong><a href="#method-i-blink-source-80" name="method-i-blink-source-80">80</a></strong>
 </pre></td>
   <td class="code"><pre><span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">blink</span> r, g, b, times
   times.times <span style="color:#080;font-weight:bold">do</span>
@@ -922,6 +871,7 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
         </h3>
         <div class='description'>
           
+          <p>Closes the device.</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-close-source'>
@@ -936,18 +886,8 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
             Source
           </a>
           <div class='collapse' id='method-i-close-source'>
-            <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-close-source-0" name="method-i-close-source-0">0</a></strong>
-<a href="#method-i-close-source-1" name="method-i-close-source-1">1</a>
-<a href="#method-i-close-source-2" name="method-i-close-source-2">2</a>
-<a href="#method-i-close-source-3" name="method-i-close-source-3">3</a>
-<a href="#method-i-close-source-4" name="method-i-close-source-4">4</a>
-<a href="#method-i-close-source-5" name="method-i-close-source-5">5</a>
-<a href="#method-i-close-source-6" name="method-i-close-source-6">6</a>
-<a href="#method-i-close-source-7" name="method-i-close-source-7">7</a>
-<a href="#method-i-close-source-8" name="method-i-close-source-8">8</a>
-</pre></td>
-  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_close(VALUE self) {
+            <div class="CodeRay">
+  <div class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_close(VALUE self) {
   <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
   Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
   <span style="color:#080;font-weight:bold">if</span>(ins-&gt;opened == <span style="color:#00D">1</span>) {
@@ -955,19 +895,21 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
     ins-&gt;opened = <span style="color:#00D">0</span>;
   }
   <span style="color:#080;font-weight:bold">return</span> Qnil;
-}</pre></td>
-</tr></table>
+}</pre></div>
+</div>
           </div>
         </div>
       </section>
       <a name='method-i-eeread'></a>
       <section class='method public-instance' id='method-method-i-eeread'>
         <h3 class='synopsis'>
-          <span class='name'>eeread</span>
-          <span class='arguments'>(p1)</span>
+          <span class='name'>
+            <div><span class="name">eeread</span> <span class="arguments">(addr) -> integer</span></div>
+          </span>
         </h3>
         <div class='description'>
           
+          <p>Returns an EEPROM byte.</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-eeread-source'>
@@ -982,34 +924,30 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
             Source
           </a>
           <div class='collapse' id='method-i-eeread-source'>
-            <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-eeread-source-0" name="method-i-eeread-source-0">0</a></strong>
-<a href="#method-i-eeread-source-1" name="method-i-eeread-source-1">1</a>
-<a href="#method-i-eeread-source-2" name="method-i-eeread-source-2">2</a>
-<a href="#method-i-eeread-source-3" name="method-i-eeread-source-3">3</a>
-<a href="#method-i-eeread-source-4" name="method-i-eeread-source-4">4</a>
-<a href="#method-i-eeread-source-5" name="method-i-eeread-source-5">5</a>
-<a href="#method-i-eeread-source-6" name="method-i-eeread-source-6">6</a>
-</pre></td>
-  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_eeread(VALUE self, VALUE addr) {
+            <div class="CodeRay">
+  <div class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_eeread(VALUE self, VALUE addr) {
   <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
   uint8_t val = <span style="color:#00D">0</span>;
   Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
   blink1_eeread(ins-&gt;dev, FIX2UINT(addr), &amp;val);
   <span style="color:#080;font-weight:bold">return</span> UINT2NUM(val);
-}</pre></td>
-</tr></table>
+}</pre></div>
+</div>
           </div>
         </div>
       </section>
       <a name='method-i-eewrite'></a>
       <section class='method public-instance' id='method-method-i-eewrite'>
         <h3 class='synopsis'>
-          <span class='name'>eewrite</span>
-          <span class='arguments'>(p1, p2)</span>
+          <span class='name'>
+            <div><span class="name">eewrite</span> <span class="arguments">(addr, val) -> integer</span></div>
+          </span>
         </h3>
         <div class='description'>
           
+          <p>Write an EEPROM byte.</p>
+          
+          <p>Return the actual number of bytes written and -1 on error.</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-eewrite-source'>
@@ -1024,30 +962,28 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
             Source
           </a>
           <div class='collapse' id='method-i-eewrite-source'>
-            <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-eewrite-source-0" name="method-i-eewrite-source-0">0</a></strong>
-<a href="#method-i-eewrite-source-1" name="method-i-eewrite-source-1">1</a>
-<a href="#method-i-eewrite-source-2" name="method-i-eewrite-source-2">2</a>
-<a href="#method-i-eewrite-source-3" name="method-i-eewrite-source-3">3</a>
-<a href="#method-i-eewrite-source-4" name="method-i-eewrite-source-4">4</a>
-</pre></td>
-  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_eewrite(VALUE self, VALUE addr, VALUE val) {
+            <div class="CodeRay">
+  <div class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_eewrite(VALUE self, VALUE addr, VALUE val) {
   <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
   Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
   <span style="color:#080;font-weight:bold">return</span> INT2NUM(blink1_eewrite(ins-&gt;dev, FIX2UINT(addr), FIX2UINT(val)));
-}</pre></td>
-</tr></table>
+}</pre></div>
+</div>
           </div>
         </div>
       </section>
       <a name='method-i-fade_to_rgb'></a>
       <section class='method public-instance' id='method-method-i-fade_to_rgb'>
         <h3 class='synopsis'>
-          <span class='name'>fade_to_rgb</span>
-          <span class='arguments'>(p1, p2, p3, p4)</span>
+          <span class='name'>
+            <div><span class="name">fade_to_rgb</span> <span class="arguments">(fade_millis, r, g, b) -> integer</span></div>
+          </span>
         </h3>
         <div class='description'>
           
+<p>Fade LED color to RGB in <code>fade_millis</code>.</p>
+
+<p>Return the actual number of bytes written and -1 on error.</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-fade_to_rgb-source'>
@@ -1062,19 +998,13 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
             Source
           </a>
           <div class='collapse' id='method-i-fade_to_rgb-source'>
-            <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-fade_to_rgb-source-0" name="method-i-fade_to_rgb-source-0">0</a></strong>
-<a href="#method-i-fade_to_rgb-source-1" name="method-i-fade_to_rgb-source-1">1</a>
-<a href="#method-i-fade_to_rgb-source-2" name="method-i-fade_to_rgb-source-2">2</a>
-<a href="#method-i-fade_to_rgb-source-3" name="method-i-fade_to_rgb-source-3">3</a>
-<a href="#method-i-fade_to_rgb-source-4" name="method-i-fade_to_rgb-source-4">4</a>
-</pre></td>
-  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_fadeToRGB(VALUE self, VALUE fadeMillis, VALUE r, VALUE g, VALUE b) {
+            <div class="CodeRay">
+  <div class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_fadeToRGB(VALUE self, VALUE fadeMillis, VALUE r, VALUE g, VALUE b) {
   <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
   Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
   <span style="color:#080;font-weight:bold">return</span> INT2NUM(blink1_fadeToRGB(ins-&gt;dev, FIX2UINT(fadeMillis), FIX2UINT(r), FIX2UINT(g), FIX2UINT(b)));
-}</pre></td>
-</tr></table>
+}</pre></div>
+</div>
           </div>
         </div>
       </section>
@@ -1086,6 +1016,7 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
         </h3>
         <div class='description'>
           
+          <p>Turn LED off.</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-off-source'>
@@ -1101,9 +1032,9 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
           </a>
           <div class='collapse' id='method-i-off-source'>
             <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#method-i-off-source-51" name="method-i-off-source-51">51</a>
-<a href="#method-i-off-source-52" name="method-i-off-source-52">52</a>
-<a href="#method-i-off-source-53" name="method-i-off-source-53">53</a>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#method-i-off-source-105" name="method-i-off-source-105">105</a>
+<a href="#method-i-off-source-106" name="method-i-off-source-106">106</a>
+<a href="#method-i-off-source-107" name="method-i-off-source-107">107</a>
 </pre></td>
   <td class="code"><pre><span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">off</span>
   <span style="color:#069">self</span>.fade_to_rgb(millis, <span style="color:#00D">0</span>, <span style="color:#00D">0</span>, <span style="color:#00D">0</span>)
@@ -1120,6 +1051,7 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
         </h3>
         <div class='description'>
           
+          <p>Turn LED white.</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-on-source'>
@@ -1135,9 +1067,9 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
           </a>
           <div class='collapse' id='method-i-on-source'>
             <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#method-i-on-source-47" name="method-i-on-source-47">47</a>
-<a href="#method-i-on-source-48" name="method-i-on-source-48">48</a>
-<a href="#method-i-on-source-49" name="method-i-on-source-49">49</a>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#method-i-on-source-98" name="method-i-on-source-98">98</a>
+<a href="#method-i-on-source-99" name="method-i-on-source-99">99</a>
+<strong><a href="#method-i-on-source-100" name="method-i-on-source-100">100</a></strong>
 </pre></td>
   <td class="code"><pre><span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">on</span>
   <span style="color:#069">self</span>.fade_to_rgb(millis, <span style="color:#00D">0xff</span>, <span style="color:#00D">0xff</span>, <span style="color:#00D">0xff</span>)
@@ -1154,6 +1086,7 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
         </h3>
         <div class='description'>
           
+<p>Open device by default <code>vendor_id</code>, <code>product_id</code>.</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-open-source'>
@@ -1168,19 +1101,8 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
             Source
           </a>
           <div class='collapse' id='method-i-open-source'>
-            <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-open-source-0" name="method-i-open-source-0">0</a></strong>
-<a href="#method-i-open-source-1" name="method-i-open-source-1">1</a>
-<a href="#method-i-open-source-2" name="method-i-open-source-2">2</a>
-<a href="#method-i-open-source-3" name="method-i-open-source-3">3</a>
-<a href="#method-i-open-source-4" name="method-i-open-source-4">4</a>
-<a href="#method-i-open-source-5" name="method-i-open-source-5">5</a>
-<a href="#method-i-open-source-6" name="method-i-open-source-6">6</a>
-<a href="#method-i-open-source-7" name="method-i-open-source-7">7</a>
-<a href="#method-i-open-source-8" name="method-i-open-source-8">8</a>
-<a href="#method-i-open-source-9" name="method-i-open-source-9">9</a>
-</pre></td>
-  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_open(VALUE self) {
+            <div class="CodeRay">
+  <div class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_open(VALUE self) {
   <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
   Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
   <span style="color:#080;font-weight:bold">if</span>(ins-&gt;opened == <span style="color:#00D">0</span>) {
@@ -1189,8 +1111,8 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
     <span style="color:#080;font-weight:bold">return</span> Qtrue;
   }
   <span style="color:#080;font-weight:bold">return</span> Qfalse;
-}</pre></td>
-</tr></table>
+}</pre></div>
+</div>
           </div>
         </div>
       </section>
@@ -1202,6 +1124,7 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
         </h3>
         <div class='description'>
           
+          <p>Open device by id.</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-open_by_id-source'>
@@ -1216,19 +1139,8 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
             Source
           </a>
           <div class='collapse' id='method-i-open_by_id-source'>
-            <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-open_by_id-source-0" name="method-i-open_by_id-source-0">0</a></strong>
-<a href="#method-i-open_by_id-source-1" name="method-i-open_by_id-source-1">1</a>
-<a href="#method-i-open_by_id-source-2" name="method-i-open_by_id-source-2">2</a>
-<a href="#method-i-open_by_id-source-3" name="method-i-open_by_id-source-3">3</a>
-<a href="#method-i-open_by_id-source-4" name="method-i-open_by_id-source-4">4</a>
-<a href="#method-i-open_by_id-source-5" name="method-i-open_by_id-source-5">5</a>
-<a href="#method-i-open_by_id-source-6" name="method-i-open_by_id-source-6">6</a>
-<a href="#method-i-open_by_id-source-7" name="method-i-open_by_id-source-7">7</a>
-<a href="#method-i-open_by_id-source-8" name="method-i-open_by_id-source-8">8</a>
-<a href="#method-i-open_by_id-source-9" name="method-i-open_by_id-source-9">9</a>
-</pre></td>
-  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_openById(VALUE self, VALUE id) {
+            <div class="CodeRay">
+  <div class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_openById(VALUE self, VALUE id) {
   <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
   Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
   <span style="color:#080;font-weight:bold">if</span>(ins-&gt;opened == <span style="color:#00D">0</span>) {
@@ -1237,8 +1149,8 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
     <span style="color:#080;font-weight:bold">return</span> Qtrue;
   }
   <span style="color:#080;font-weight:bold">return</span> Qfalse;
-}</pre></td>
-</tr></table>
+}</pre></div>
+</div>
           </div>
         </div>
       </section>
@@ -1250,6 +1162,7 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
         </h3>
         <div class='description'>
           
+          <p>Open device by device path.</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-open_by_path-source'>
@@ -1264,19 +1177,8 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
             Source
           </a>
           <div class='collapse' id='method-i-open_by_path-source'>
-            <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-open_by_path-source-0" name="method-i-open_by_path-source-0">0</a></strong>
-<a href="#method-i-open_by_path-source-1" name="method-i-open_by_path-source-1">1</a>
-<a href="#method-i-open_by_path-source-2" name="method-i-open_by_path-source-2">2</a>
-<a href="#method-i-open_by_path-source-3" name="method-i-open_by_path-source-3">3</a>
-<a href="#method-i-open_by_path-source-4" name="method-i-open_by_path-source-4">4</a>
-<a href="#method-i-open_by_path-source-5" name="method-i-open_by_path-source-5">5</a>
-<a href="#method-i-open_by_path-source-6" name="method-i-open_by_path-source-6">6</a>
-<a href="#method-i-open_by_path-source-7" name="method-i-open_by_path-source-7">7</a>
-<a href="#method-i-open_by_path-source-8" name="method-i-open_by_path-source-8">8</a>
-<a href="#method-i-open_by_path-source-9" name="method-i-open_by_path-source-9">9</a>
-</pre></td>
-  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_openByPath(VALUE self, VALUE path) {
+            <div class="CodeRay">
+  <div class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_openByPath(VALUE self, VALUE path) {
   <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
   Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
   <span style="color:#080;font-weight:bold">if</span>(ins-&gt;opened == <span style="color:#00D">0</span>) {
@@ -1285,8 +1187,8 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
     <span style="color:#080;font-weight:bold">return</span> Qtrue;
   }
   <span style="color:#080;font-weight:bold">return</span> Qfalse;
-}</pre></td>
-</tr></table>
+}</pre></div>
+</div>
           </div>
         </div>
       </section>
@@ -1298,6 +1200,7 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
         </h3>
         <div class='description'>
           
+          <p>Open device by serial id.</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-open_by_serial-source'>
@@ -1312,19 +1215,8 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
             Source
           </a>
           <div class='collapse' id='method-i-open_by_serial-source'>
-            <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-open_by_serial-source-0" name="method-i-open_by_serial-source-0">0</a></strong>
-<a href="#method-i-open_by_serial-source-1" name="method-i-open_by_serial-source-1">1</a>
-<a href="#method-i-open_by_serial-source-2" name="method-i-open_by_serial-source-2">2</a>
-<a href="#method-i-open_by_serial-source-3" name="method-i-open_by_serial-source-3">3</a>
-<a href="#method-i-open_by_serial-source-4" name="method-i-open_by_serial-source-4">4</a>
-<a href="#method-i-open_by_serial-source-5" name="method-i-open_by_serial-source-5">5</a>
-<a href="#method-i-open_by_serial-source-6" name="method-i-open_by_serial-source-6">6</a>
-<a href="#method-i-open_by_serial-source-7" name="method-i-open_by_serial-source-7">7</a>
-<a href="#method-i-open_by_serial-source-8" name="method-i-open_by_serial-source-8">8</a>
-<a href="#method-i-open_by_serial-source-9" name="method-i-open_by_serial-source-9">9</a>
-</pre></td>
-  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_openBySerial(VALUE self, VALUE serial) {
+            <div class="CodeRay">
+  <div class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_openBySerial(VALUE self, VALUE serial) {
   <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
   Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
   <span style="color:#080;font-weight:bold">if</span>(ins-&gt;opened == <span style="color:#00D">0</span>) {
@@ -1333,8 +1225,8 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
     <span style="color:#080;font-weight:bold">return</span> Qtrue;
   }
   <span style="color:#080;font-weight:bold">return</span> Qfalse;
-}</pre></td>
-</tr></table>
+}</pre></div>
+</div>
           </div>
         </div>
       </section>
@@ -1346,6 +1238,7 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
         </h3>
         <div class='description'>
           
+          <p>Return the device is opened.</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-opened-3F-source'>
@@ -1360,30 +1253,28 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
             Source
           </a>
           <div class='collapse' id='method-i-opened-3F-source'>
-            <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-opened-3F-source-0" name="method-i-opened-3F-source-0">0</a></strong>
-<a href="#method-i-opened-3F-source-1" name="method-i-opened-3F-source-1">1</a>
-<a href="#method-i-opened-3F-source-2" name="method-i-opened-3F-source-2">2</a>
-<a href="#method-i-opened-3F-source-3" name="method-i-opened-3F-source-3">3</a>
-<a href="#method-i-opened-3F-source-4" name="method-i-opened-3F-source-4">4</a>
-</pre></td>
-  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_opened(VALUE self) {
+            <div class="CodeRay">
+  <div class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_opened(VALUE self) {
   <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
   Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
   <span style="color:#080;font-weight:bold">return</span> ins-&gt;opened == <span style="color:#00D">1</span> ? Qtrue : Qfalse;
-}</pre></td>
-</tr></table>
+}</pre></div>
+</div>
           </div>
         </div>
       </section>
       <a name='method-i-play'></a>
       <section class='method public-instance' id='method-method-i-play'>
         <h3 class='synopsis'>
-          <span class='name'>play</span>
-          <span class='arguments'>(p1)</span>
+          <span class='name'>
+            <div><span class="name">play</span> <span class="arguments">(pos) -> integer</span></div>
+          </span>
         </h3>
         <div class='description'>
           
+          <p>Start playing color sequence (at pos)</p>
+          
+          <p>Return the actual number of bytes written and -1 on error.</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-play-source'>
@@ -1398,19 +1289,13 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
             Source
           </a>
           <div class='collapse' id='method-i-play-source'>
-            <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-play-source-0" name="method-i-play-source-0">0</a></strong>
-<a href="#method-i-play-source-1" name="method-i-play-source-1">1</a>
-<a href="#method-i-play-source-2" name="method-i-play-source-2">2</a>
-<a href="#method-i-play-source-3" name="method-i-play-source-3">3</a>
-<a href="#method-i-play-source-4" name="method-i-play-source-4">4</a>
-</pre></td>
-  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_play(VALUE self, VALUE pos) {
+            <div class="CodeRay">
+  <div class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_play(VALUE self, VALUE pos) {
   <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
   Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
   <span style="color:#080;font-weight:bold">return</span> INT2NUM(blink1_play(ins-&gt;dev, <span style="color:#00D">1</span>, FIX2UINT(pos)));
-}</pre></td>
-</tr></table>
+}</pre></div>
+</div>
           </div>
         </div>
       </section>
@@ -1422,6 +1307,7 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
         </h3>
         <div class='description'>
           
+<p>Flash random color for <code>times</code>.</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-random-source'>
@@ -1437,15 +1323,15 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
           </a>
           <div class='collapse' id='method-i-random-source'>
             <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#method-i-random-source-37" name="method-i-random-source-37">37</a>
-<a href="#method-i-random-source-38" name="method-i-random-source-38">38</a>
-<a href="#method-i-random-source-39" name="method-i-random-source-39">39</a>
-<strong><a href="#method-i-random-source-40" name="method-i-random-source-40">40</a></strong>
-<a href="#method-i-random-source-41" name="method-i-random-source-41">41</a>
-<a href="#method-i-random-source-42" name="method-i-random-source-42">42</a>
-<a href="#method-i-random-source-43" name="method-i-random-source-43">43</a>
-<a href="#method-i-random-source-44" name="method-i-random-source-44">44</a>
-<a href="#method-i-random-source-45" name="method-i-random-source-45">45</a>
+  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><a href="#method-i-random-source-85" name="method-i-random-source-85">85</a>
+<a href="#method-i-random-source-86" name="method-i-random-source-86">86</a>
+<a href="#method-i-random-source-87" name="method-i-random-source-87">87</a>
+<a href="#method-i-random-source-88" name="method-i-random-source-88">88</a>
+<a href="#method-i-random-source-89" name="method-i-random-source-89">89</a>
+<strong><a href="#method-i-random-source-90" name="method-i-random-source-90">90</a></strong>
+<a href="#method-i-random-source-91" name="method-i-random-source-91">91</a>
+<a href="#method-i-random-source-92" name="method-i-random-source-92">92</a>
+<a href="#method-i-random-source-93" name="method-i-random-source-93">93</a>
 </pre></td>
   <td class="code"><pre><span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">random</span> times
   times.times <span style="color:#080;font-weight:bold">do</span>
@@ -1463,11 +1349,15 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
       <a name='method-i-read_pattern_line'></a>
       <section class='method public-instance' id='method-method-i-read_pattern_line'>
         <h3 class='synopsis'>
-          <span class='name'>read_pattern_line</span>
-          <span class='arguments'>(p1)</span>
+          <span class='name'>
+            <div><span class="name">read_pattern_line</span> <span class="arguments">(pos) -> hash</span></div>
+          </span>
         </h3>
         <div class='description'>
           
+          <p>Read pattern RGB value at pos</p>
+          
+          <p>Return hash with value with key +“fade_millis”+, +“r”+, +“g”+, +“b”+</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-read_pattern_line-source'>
@@ -1482,21 +1372,8 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
             Source
           </a>
           <div class='collapse' id='method-i-read_pattern_line-source'>
-            <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-read_pattern_line-source-0" name="method-i-read_pattern_line-source-0">0</a></strong>
-<a href="#method-i-read_pattern_line-source-1" name="method-i-read_pattern_line-source-1">1</a>
-<a href="#method-i-read_pattern_line-source-2" name="method-i-read_pattern_line-source-2">2</a>
-<a href="#method-i-read_pattern_line-source-3" name="method-i-read_pattern_line-source-3">3</a>
-<a href="#method-i-read_pattern_line-source-4" name="method-i-read_pattern_line-source-4">4</a>
-<a href="#method-i-read_pattern_line-source-5" name="method-i-read_pattern_line-source-5">5</a>
-<a href="#method-i-read_pattern_line-source-6" name="method-i-read_pattern_line-source-6">6</a>
-<a href="#method-i-read_pattern_line-source-7" name="method-i-read_pattern_line-source-7">7</a>
-<a href="#method-i-read_pattern_line-source-8" name="method-i-read_pattern_line-source-8">8</a>
-<a href="#method-i-read_pattern_line-source-9" name="method-i-read_pattern_line-source-9">9</a>
-<strong><a href="#method-i-read_pattern_line-source-10" name="method-i-read_pattern_line-source-10">10</a></strong>
-<a href="#method-i-read_pattern_line-source-11" name="method-i-read_pattern_line-source-11">11</a>
-</pre></td>
-  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_readPatternLine(VALUE self, VALUE pos) {
+            <div class="CodeRay">
+  <div class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_readPatternLine(VALUE self, VALUE pos) {
   <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
   Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
   uint16_t fadeMillis; uint8_t r; uint8_t g; uint8_t b;
@@ -1507,105 +1384,23 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
   rb_hash_aset(hash, rb_str_new2(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">g</span><span style="color:#710">&quot;</span></span>), UINT2NUM(g));
   rb_hash_aset(hash, rb_str_new2(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">b</span><span style="color:#710">&quot;</span></span>), UINT2NUM(b));
   <span style="color:#080;font-weight:bold">return</span> hash;
-}</pre></td>
-</tr></table>
-          </div>
-        </div>
-      </section>
-      <a name='method-i-serialnum'></a>
-      <section class='method public-instance' id='method-method-i-serialnum'>
-        <h3 class='synopsis'>
-          <span class='name'>serialnum</span>
-          <span class='arguments'>()</span>
-        </h3>
-        <div class='description'>
-          
-        </div>
-        <div class='source'>
-          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-serialnum-source'>
-            <span class='show'>
-              <span class='icon-resize-full'></span>
-              Show
-            </span>
-            <span class='hide'>
-              <span class='icon-resize-small'></span>
-              Hide
-            </span>
-            Source
-          </a>
-          <div class='collapse' id='method-i-serialnum-source'>
-            <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-serialnum-source-0" name="method-i-serialnum-source-0">0</a></strong>
-<a href="#method-i-serialnum-source-1" name="method-i-serialnum-source-1">1</a>
-<a href="#method-i-serialnum-source-2" name="method-i-serialnum-source-2">2</a>
-<a href="#method-i-serialnum-source-3" name="method-i-serialnum-source-3">3</a>
-<a href="#method-i-serialnum-source-4" name="method-i-serialnum-source-4">4</a>
-<a href="#method-i-serialnum-source-5" name="method-i-serialnum-source-5">5</a>
-<a href="#method-i-serialnum-source-6" name="method-i-serialnum-source-6">6</a>
-</pre></td>
-  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_serialnumread(VALUE self) {
-  <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
-  Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
-  uint8_t *serialnum;
-  blink1_serialnumread(ins-&gt;dev, &amp;serialnum);
-  <span style="color:#080;font-weight:bold">return</span> UINT2NUM(serialnum);
-}</pre></td>
-</tr></table>
-          </div>
-        </div>
-      </section>
-      <a name='method-i-serialnum-3D'></a>
-      <section class='method public-instance' id='method-method-i-serialnum-3D'>
-        <h3 class='synopsis'>
-          <span class='name'>serialnum=</span>
-          <span class='arguments'>(p1)</span>
-        </h3>
-        <div class='description'>
-          
-        </div>
-        <div class='source'>
-          <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-serialnum-3D-source'>
-            <span class='show'>
-              <span class='icon-resize-full'></span>
-              Show
-            </span>
-            <span class='hide'>
-              <span class='icon-resize-small'></span>
-              Hide
-            </span>
-            Source
-          </a>
-          <div class='collapse' id='method-i-serialnum-3D-source'>
-            <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-serialnum-3D-source-0" name="method-i-serialnum-3D-source-0">0</a></strong>
-<a href="#method-i-serialnum-3D-source-1" name="method-i-serialnum-3D-source-1">1</a>
-<a href="#method-i-serialnum-3D-source-2" name="method-i-serialnum-3D-source-2">2</a>
-<a href="#method-i-serialnum-3D-source-3" name="method-i-serialnum-3D-source-3">3</a>
-<a href="#method-i-serialnum-3D-source-4" name="method-i-serialnum-3D-source-4">4</a>
-<a href="#method-i-serialnum-3D-source-5" name="method-i-serialnum-3D-source-5">5</a>
-<a href="#method-i-serialnum-3D-source-6" name="method-i-serialnum-3D-source-6">6</a>
-<a href="#method-i-serialnum-3D-source-7" name="method-i-serialnum-3D-source-7">7</a>
-</pre></td>
-  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_serialnumwrite(VALUE self, VALUE serialnumstr) {
-  <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
-  Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
-  <span style="color:#0a5;font-weight:bold">char</span> *serialnumc = RSTRING_PTR(serialnumstr);
-  <span style="color:#0a5;font-weight:bold">char</span> serialnum[<span style="color:#00D">100</span>];
-  strcpy(serialnumc, serialnum);
-  <span style="color:#080;font-weight:bold">return</span> INT2NUM(blink1_serialnumwrite(ins-&gt;dev, (uint8_t *)serialnum));
-}</pre></td>
-</tr></table>
+}</pre></div>
+</div>
           </div>
         </div>
       </section>
       <a name='method-i-serverdown'></a>
       <section class='method public-instance' id='method-method-i-serverdown'>
         <h3 class='synopsis'>
-          <span class='name'>serverdown</span>
-          <span class='arguments'>(p1, p2)</span>
+          <span class='name'>
+            <div><span class="name">serverdown</span> <span class="arguments">(on, millisecond) -> integer</span></div>
+          </span>
         </h3>
         <div class='description'>
           
+          <p>Turn on/off servertickle</p>
+          
+          <p>Return the actual number of bytes written and -1 on error.</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-serverdown-source'>
@@ -1620,30 +1415,28 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
             Source
           </a>
           <div class='collapse' id='method-i-serverdown-source'>
-            <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-serverdown-source-0" name="method-i-serverdown-source-0">0</a></strong>
-<a href="#method-i-serverdown-source-1" name="method-i-serverdown-source-1">1</a>
-<a href="#method-i-serverdown-source-2" name="method-i-serverdown-source-2">2</a>
-<a href="#method-i-serverdown-source-3" name="method-i-serverdown-source-3">3</a>
-<a href="#method-i-serverdown-source-4" name="method-i-serverdown-source-4">4</a>
-</pre></td>
-  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_serverdown(VALUE self, VALUE on, VALUE millis) {
+            <div class="CodeRay">
+  <div class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_serverdown(VALUE self, VALUE on, VALUE millis) {
   <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
   Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
   <span style="color:#080;font-weight:bold">return</span> INT2NUM(blink1_serverdown(ins-&gt;dev, RTEST(on) ? <span style="color:#00D">1</span> : <span style="color:#00D">0</span>, FIX2UINT(millis)));
-}</pre></td>
-</tr></table>
+}</pre></div>
+</div>
           </div>
         </div>
       </section>
       <a name='method-i-set_rgb'></a>
       <section class='method public-instance' id='method-method-i-set_rgb'>
         <h3 class='synopsis'>
-          <span class='name'>set_rgb</span>
-          <span class='arguments'>(p1, p2, p3)</span>
+          <span class='name'>
+            <div><span class="name">set_rgb</span> <span class="arguments">(r, g, b) -> integer</span></div>
+          </span>
         </h3>
         <div class='description'>
           
+          <p>Set LED color to RGB.</p>
+          
+          <p>Return the actual number of bytes written and -1 on error.</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-set_rgb-source'>
@@ -1658,30 +1451,28 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
             Source
           </a>
           <div class='collapse' id='method-i-set_rgb-source'>
-            <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-set_rgb-source-0" name="method-i-set_rgb-source-0">0</a></strong>
-<a href="#method-i-set_rgb-source-1" name="method-i-set_rgb-source-1">1</a>
-<a href="#method-i-set_rgb-source-2" name="method-i-set_rgb-source-2">2</a>
-<a href="#method-i-set_rgb-source-3" name="method-i-set_rgb-source-3">3</a>
-<a href="#method-i-set_rgb-source-4" name="method-i-set_rgb-source-4">4</a>
-</pre></td>
-  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_setRGB(VALUE self, VALUE r, VALUE g, VALUE b) {
+            <div class="CodeRay">
+  <div class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_setRGB(VALUE self, VALUE r, VALUE g, VALUE b) {
   <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
   Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
   <span style="color:#080;font-weight:bold">return</span> INT2NUM(blink1_setRGB(ins-&gt;dev, FIX2UINT(r), FIX2UINT(g), FIX2UINT(b)));
-}</pre></td>
-</tr></table>
+}</pre></div>
+</div>
           </div>
         </div>
       </section>
       <a name='method-i-stop'></a>
       <section class='method public-instance' id='method-method-i-stop'>
         <h3 class='synopsis'>
-          <span class='name'>stop</span>
-          <span class='arguments'>(p1)</span>
+          <span class='name'>
+            <div><span class="name">stop</span> <span class="arguments">(pos) -> integer</span></div>
+          </span>
         </h3>
         <div class='description'>
           
+          <p>Stop playing color sequence (at pos)</p>
+          
+          <p>Return the actual number of bytes written and -1 on error.</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-stop-source'>
@@ -1696,19 +1487,13 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
             Source
           </a>
           <div class='collapse' id='method-i-stop-source'>
-            <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-stop-source-0" name="method-i-stop-source-0">0</a></strong>
-<a href="#method-i-stop-source-1" name="method-i-stop-source-1">1</a>
-<a href="#method-i-stop-source-2" name="method-i-stop-source-2">2</a>
-<a href="#method-i-stop-source-3" name="method-i-stop-source-3">3</a>
-<a href="#method-i-stop-source-4" name="method-i-stop-source-4">4</a>
-</pre></td>
-  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_stop(VALUE self, VALUE pos) {
+            <div class="CodeRay">
+  <div class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_stop(VALUE self, VALUE pos) {
   <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
   Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
   <span style="color:#080;font-weight:bold">return</span> INT2NUM(blink1_play(ins-&gt;dev, <span style="color:#00D">0</span>, FIX2UINT(pos)));
-}</pre></td>
-</tr></table>
+}</pre></div>
+</div>
           </div>
         </div>
       </section>
@@ -1720,6 +1505,7 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
         </h3>
         <div class='description'>
           
+          <p>Return blink(1) version.</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-version-source'>
@@ -1734,30 +1520,28 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
             Source
           </a>
           <div class='collapse' id='method-i-version-source'>
-            <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-version-source-0" name="method-i-version-source-0">0</a></strong>
-<a href="#method-i-version-source-1" name="method-i-version-source-1">1</a>
-<a href="#method-i-version-source-2" name="method-i-version-source-2">2</a>
-<a href="#method-i-version-source-3" name="method-i-version-source-3">3</a>
-<a href="#method-i-version-source-4" name="method-i-version-source-4">4</a>
-</pre></td>
-  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_getVersion(VALUE self) {
+            <div class="CodeRay">
+  <div class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_getVersion(VALUE self) {
   <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
   Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
   <span style="color:#080;font-weight:bold">return</span> INT2NUM(blink1_getVersion(ins-&gt;dev));
-}</pre></td>
-</tr></table>
+}</pre></div>
+</div>
           </div>
         </div>
       </section>
       <a name='method-i-write_pattern_line'></a>
       <section class='method public-instance' id='method-method-i-write_pattern_line'>
         <h3 class='synopsis'>
-          <span class='name'>write_pattern_line</span>
-          <span class='arguments'>(p1, p2, p3, p4, p5)</span>
+          <span class='name'>
+            <div><span class="name">write_pattern_line</span> <span class="arguments">(fade_millis, r, g, b, pos) -> integer</span></div>
+          </span>
         </h3>
         <div class='description'>
           
+          <p>Write pattern RGB value at pos</p>
+          
+          <p>Return the actual number of bytes written and -1 on error.</p>
         </div>
         <div class='source'>
           <a class='btn btn-mini source-toggle collapsed' data-toggle='collapse' href='#method-i-write_pattern_line-source'>
@@ -1772,19 +1556,13 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
             Source
           </a>
           <div class='collapse' id='method-i-write_pattern_line-source'>
-            <table class="CodeRay"><tr>
-  <td class="line-numbers" title="double click to toggle" ondblclick="with (this.firstChild.style) { display = (display == '') ? 'none' : '' }"><pre><strong><a href="#method-i-write_pattern_line-source-0" name="method-i-write_pattern_line-source-0">0</a></strong>
-<a href="#method-i-write_pattern_line-source-1" name="method-i-write_pattern_line-source-1">1</a>
-<a href="#method-i-write_pattern_line-source-2" name="method-i-write_pattern_line-source-2">2</a>
-<a href="#method-i-write_pattern_line-source-3" name="method-i-write_pattern_line-source-3">3</a>
-<a href="#method-i-write_pattern_line-source-4" name="method-i-write_pattern_line-source-4">4</a>
-</pre></td>
-  <td class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_writePatternLine(VALUE self, VALUE fadeMillis, VALUE r, VALUE g, VALUE b, VALUE pos) {
+            <div class="CodeRay">
+  <div class="code"><pre><span style="color:#088;font-weight:bold">static</span> VALUE rb_blink1_writePatternLine(VALUE self, VALUE fadeMillis, VALUE r, VALUE g, VALUE b, VALUE pos) {
   <span style="color:#080;font-weight:bold">struct</span> Blink1Instance *ins;
   Data_Get_Struct(self, <span style="color:#080;font-weight:bold">struct</span> Blink1Instance, ins);
   <span style="color:#080;font-weight:bold">return</span> INT2NUM(blink1_writePatternLine(ins-&gt;dev, FIX2UINT(fadeMillis), FIX2UINT(r), FIX2UINT(g), FIX2UINT(b), FIX2UINT(pos)));
-}</pre></td>
-</tr></table>
+}</pre></div>
+</div>
           </div>
         </div>
       </section>
@@ -1822,7 +1600,6 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
       <li><a href="#method-c-degamma_enabled-3D">degamma_enabled=</a></li>
       <li><a href="#method-c-enumerate">enumerate</a></li>
       <li><a href="#method-c-enumerate_vid_pid">enumerate_vid_pid</a></li>
-      <li><a href="#method-c-error_message">error_message</a></li>
       <li><a href="#method-c-list">list</a></li>
       <li><a href="#method-c-new">new</a></li>
       <li><a href="#method-c-open">open</a></li>
@@ -1851,8 +1628,6 @@ hid_device* dev, void* buf, int len); int blink1_getSerialNumber(hid_device
       <li><a href="#method-i-play">play</a></li>
       <li><a href="#method-i-random">random</a></li>
       <li><a href="#method-i-read_pattern_line">read_pattern_line</a></li>
-      <li><a href="#method-i-serialnum">serialnum</a></li>
-      <li><a href="#method-i-serialnum-3D">serialnum=</a></li>
       <li><a href="#method-i-serverdown">serverdown</a></li>
       <li><a href="#method-i-set_rgb">set_rgb</a></li>
       <li><a href="#method-i-stop">stop</a></li>
