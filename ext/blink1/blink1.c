@@ -81,9 +81,9 @@ static VALUE rb_blink1_getCachedSerial(VALUE self, VALUE i) {
 
 /**
  * :call-seq:
- *   <span class="name">Blink1.cached_serial</span> <span class="arguments">-> integer</span>
+ *   <span class="name">cached_count</span> <span class="arguments">-> integer</span>
  *
- * Return cached device serial id by index.
+ * Return number of cached devices.
  */
 static VALUE rb_blink1_getCachedCount(VALUE self) {
   return INT2NUM(blink1_getCachedCount());
