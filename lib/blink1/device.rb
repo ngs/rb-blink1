@@ -45,32 +45,6 @@ module Blink1
     end
 
     #
-    # :call-seq:
-    #   <span class="name">open</span> <span class="arguments">( {Fixnum} id ) { |blink1| }</span>
-    #   <span class="name">open</span> <span class="arguments">( {Boolean} autoopen ) { |blink1| }</span>
-    #   <span class="name">open</span> <span class="arguments">( {String} serial_id ) { |blink1| }</span>
-    #   <span class="name">open</span> <span class="arguments">( :path => <em>device_path</em> ) { |blink1| }</span>
-    #   <span class="name">open</span> <span class="arguments">( :serial => <em>serial_id</em> ) { |blink1| }</span>
-    #
-    # If block given, yieds new instance of +Blink1+.
-    #
-    # If not, returns new +Blink1+
-    #
-    def self.open option = nil, &block
-      b = self.new(option)
-      b.open if option.nil?
-      if block
-        begin
-          b.instance_eval &block
-        ensure
-          b.close
-        end
-      else
-        b
-      end
-    end
-
-    #
     # Blink with RGB value for +times+.
     #
     def blink r, g, b, times

@@ -24,42 +24,38 @@ module Blink1
       :enumerate_vid_pid,
       :list,
       :new,
-      :open,
       :product_id,
       :sleep,
       :sort_paths,
       :sort_serials,
       :vendor_id
 
-    def_delegators :@device,
-      :[],
-      :[]=,
-      :blink,
-      :close,
-      :delay_millis,
-      :eeread,
-      :eewrite,
-      :fade_to_rgb,
-      :millis,
-      :off,
-      :on,
-      :open,
-      :open_by_id,
-      :open_by_path,
-      :open_by_serial,
-      :opened?,
-      :play,
-      :random,
-      :read_pattern_line,
-      :serverdown,
-      :set_rgb,
-      :stop,
-      :version,
-      :write_pattern_line
-
-    def initialize option = nil
-      @device = Blink1::Device.new option
+    #
+    # :call-seq:
+    #   <span class="name">open</span> <span class="arguments">( {Fixnum} id ) { |blink1| }</span>
+    #   <span class="name">open</span> <span class="arguments">( {Boolean} autoopen ) { |blink1| }</span>
+    #   <span class="name">open</span> <span class="arguments">( {String} serial_id ) { |blink1| }</span>
+    #   <span class="name">open</span> <span class="arguments">( :path => <em>device_path</em> ) { |blink1| }</span>
+    #   <span class="name">open</span> <span class="arguments">( :serial => <em>serial_id</em> ) { |blink1| }</span>
+    #
+    # If block given, yieds new instance of +Blink1+.
+    #
+    # If not, returns new +Blink1+
+    #
+    def open option = nil, &block
+      b = Blink1::Device.new(option)
+      b.open if option.nil?
+      if block
+        begin
+          b.instance_eval &block
+        ensure
+          b.close
+        end
+      else
+        b
+      end
     end
+
 
   end
 

@@ -27,8 +27,7 @@ describe Blink1 do
     end
 
     it 'set_rgb' do
-      # TODO: Forward to device
-      Blink1::Device.open do |blink1|
+      Blink1.open do |blink1|
         blink1.set_rgb(255, 255, 255).should_not == -1
         Blink1.sleep 1000
         blink1.off.should_not == -1
