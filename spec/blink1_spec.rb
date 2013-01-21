@@ -14,7 +14,7 @@ describe Blink1 do
 
   end
 
-  describe 'actual device', :if => Blink1.cached_count > 0 do
+  describe 'actual device', :device => true do
 
     it 'matches device path, serial, id' do
       list = Blink1.list

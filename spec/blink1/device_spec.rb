@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Blink1::Device do
 
-  describe 'actual deviec control', :if => Blink1.cached_count > 0 do
+  describe 'actual deviec control', :device => true do
 
     it 'open/close' do
       blink1 = Blink1.new
