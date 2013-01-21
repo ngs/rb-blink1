@@ -26,14 +26,9 @@ describe Blink1 do
       end
     end
 
-    it 'set_rgb' do
+    it 'open type check' do
       Blink1.open do |blink1|
-        blink1.set_rgb(255, 255, 255).should_not == -1
-        Blink1.sleep 1000
-        blink1.off.should_not == -1
-        blink1.opened?.should == true
-        blink1.close
-        blink1.opened?.should == false
+        blink1.is_a?(Blink1::Device).should == true
       end
     end
 
