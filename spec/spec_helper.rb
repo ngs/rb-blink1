@@ -11,7 +11,6 @@ $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'ext'))
 require 'blink1'
 
 RSpec.configure do |config|
-  # if !ENV['CI'] &&Blink1.list.length > 0
   if Blink1.list.length > 0
     puts "\nTesting with device at path #{ Blink1.cached_path(0) }\n\n"
   else

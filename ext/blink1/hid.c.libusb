@@ -410,9 +410,7 @@ int HID_API_EXPORT hid_init(void)
 
 		/* Init Libusb */
     int ret = 100;
-    ret = libusb_init(&usb_context);
-    printf("aa %d %s", ret, usb_context);
-		if (ret)
+		if (libusb_init(&usb_context))
 			return -1;
 
 		/* Set the locale if it's not set. */
@@ -445,7 +443,8 @@ struct hid_device_info  HID_API_EXPORT *hid_enumerate(unsigned short vendor_id, 
 	struct hid_device_info *root = NULL; // return object
 	struct hid_device_info *cur_dev = NULL;
 
-	hid_init();
+	if(hid_init())
+    return NULL;
 
 	num_devs = libusb_get_device_list(usb_context, &devs);
 	if (num_devs < 0)
