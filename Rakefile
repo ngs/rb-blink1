@@ -19,7 +19,7 @@ RSpec::Core::RakeTask.new
 
 RDoc::Task.new do |rdoc|
 
-  rdoc.rdoc_files.include("README.rdoc", "lib/**/*.rb", "ext/blink1/blink1.c")
+  rdoc.rdoc_files.include("README.rdoc", "lib/**/*.rb", "ext/blink1/blink1_ext.c")
   rdoc.generator  = 'bootstrap'
   rdoc.main       = "README.rdoc"
   rdoc.rdoc_dir   = 'html'

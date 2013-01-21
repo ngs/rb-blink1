@@ -375,9 +375,9 @@ static VALUE rb_blink1_readPatternLine(VALUE self, VALUE pos) {
 // int blink1_playPattern(hid_device *dev,,);
 
 
-void Init_blink1() {
-  VALUE module;
-  VALUE klass = rb_define_class("Blink1", rb_cObject);
+void Init_blink1_ext() {
+  VALUE module = rb_define_module("Blink1");
+  VALUE klass  = rb_define_class_under(module, "Device", rb_cObject);
 
   rb_define_singleton_method(klass, "vendor_id",         rb_blink1_vid,                  0);
   rb_define_singleton_method(klass, "product_id",        rb_blink1_pid,                  0);

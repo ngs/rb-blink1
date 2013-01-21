@@ -51,4 +51,4 @@ FileUtils.copy $HID_C, "#{$srcdir}/hid.c"
 
 $CFLAGS << ' -std=gnu99'
 
-create_makefile('blink1')
+create_makefile('blink1_ext')
