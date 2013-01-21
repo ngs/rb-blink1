@@ -409,7 +409,6 @@ int HID_API_EXPORT hid_init(void)
 		const char *locale;
 
 		/* Init Libusb */
-    int ret = 100;
 		if (libusb_init(&usb_context))
 			return -1;
 
