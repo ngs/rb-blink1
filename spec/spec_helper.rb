@@ -15,7 +15,7 @@ RSpec.configure do |config|
   if Blink1.cached_count > 0
     puts "\nTesting with device at path #{ Blink1.cached_path(0) }\n\n"
   else
-    c.filter_run_excluding :device => true
+    config.filter_run_excluding :device => true
   end
 end
 
