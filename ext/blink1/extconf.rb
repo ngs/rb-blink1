@@ -49,6 +49,6 @@ end
 
 FileUtils.copy $HID_C, "#{$srcdir}/hid.c"
 
-$CFLAGS << ' -std=gnu99'
+$CFLAGS << " -std=gnu99 -I#{$srcdir}/include"
 
 create_makefile('blink1')

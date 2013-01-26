@@ -1,6 +1,7 @@
 pkg/*
 *.gem
 *.bundle
+*.so
 Gemfile.lock
 ext/blink1/hid.c
 html
