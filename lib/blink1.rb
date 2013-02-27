@@ -12,7 +12,7 @@ class Blink1
   attr_accessor :delay_millis
 
   # :call-seq:
-  #   <span class="name">new</span> <span class="arguments">( {Fixnum} id )</span> 
+  #   <span class="name">new</span> <span class="arguments">( {Fixnum} id )</span>
   #   <span class="name">new</span> <span class="arguments">( {Boolean} auto_open )</span>
   #   <span class="name">new</span> <span class="arguments">( {String} serial_id )</span>
   #   <span class="name">new</span> <span class="arguments">( :path => <em>device_path</em> )</span>
@@ -43,7 +43,7 @@ class Blink1
 
   #
   # :call-seq:
-  #   <span class="name">open</span> <span class="arguments">( {Fixnum} id ) { |blink1| }</span> 
+  #   <span class="name">open</span> <span class="arguments">( {Fixnum} id ) { |blink1| }</span>
   #   <span class="name">open</span> <span class="arguments">( {Boolean} autoopen ) { |blink1| }</span>
   #   <span class="name">open</span> <span class="arguments">( {String} serial_id ) { |blink1| }</span>
   #   <span class="name">open</span> <span class="arguments">( :path => <em>device_path</em> ) { |blink1| }</span>
@@ -133,9 +133,9 @@ class Blink1
     devs = []
     while i < count do
       devs << {
-        id: i,
-        serial: cached_serial(i),
-        path: cached_path(i)
+        :id     => i,
+        :serial => cached_serial(i),
+        :path   => cached_path(i)
       }
       i += 1
     end

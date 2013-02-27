@@ -5,6 +5,7 @@ pkg/*
 Gemfile.lock
 ext/blink1/hid.c
 html
+.ruby-version
 
 
 ## MAC OS
