@@ -14,7 +14,7 @@ describe Blink1 do
 
   end
 
-  context 'class methods' do
+  context 'class methods', :device => true do
 
     it 'returns list' do
       Blink1.list.is_a?(Array).should be_true
