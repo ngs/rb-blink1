@@ -14,8 +14,8 @@ const uint8_t EEPROM_ADDR_OSCCAL = 0;
 static void calibrationLoad(void)
 {
     uint8_t calibrationValue;
-    // calibration value from last time 
-    calibrationValue = eeprom_read_byte(EEPROM_ADDR_OSCCAL); 
+    // calibration value from last time
+    calibrationValue = eeprom_read_byte(EEPROM_ADDR_OSCCAL);
     if(calibrationValue != 0xff){
         OSCCAL = calibrationValue;
     }
@@ -42,8 +42,8 @@ static void calibrateOscillator(void)
     /* do a binary search: */
     do{
         OSCCAL = trialValue + step;
-        x = usbMeasureFrameLength();  // proportional to current real frequency 
-        if(x < targetValue)           // frequency still too low 
+        x = usbMeasureFrameLength();  // proportional to current real frequency
+        if(x < targetValue)           // frequency still too low
             trialValue += step;
         step >>= 1;
     }while(step > 0);
@@ -76,9 +76,9 @@ both regions.
 void usbEventResetReady(void)
 {
     calibrateOscillator();
-    // store the calibrated value in EEPROM 
+    // store the calibrated value in EEPROM
     eeprom_write_byte(EEPROM_ADDR_OSCCAL, OSCCAL);
-    
+
     usbHasBeenSetup++;
 }
 

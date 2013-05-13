@@ -1,5 +1,5 @@
 /*
- * blink(1) C library -- 
+ * blink(1) C library --
  *
  * 2012, Tod E. Kurt, http://todbot.com/blog/ , http://thingm.com/
  *
@@ -12,7 +12,7 @@
 #include <stdint.h>
 
 #include "hidapi.h"
-#include "usbconfig.h" // from firmware, for VID,PID,vendor name & product name 
+#include "usbconfig.h" // from firmware, for VID,PID,vendor name & product name
 
 #ifdef __cplusplus
 extern "C" {
@@ -47,6 +47,8 @@ int blink1_getVersion(hid_device *dev);
 
 int blink1_fadeToRGB(hid_device *dev, uint16_t fadeMillis,
                      uint8_t r, uint8_t g, uint8_t b );
+int blink1_fadeToRGBN(hid_device *dev, uint16_t fadeMillis,
+                      uint8_t r, uint8_t g, uint8_t b, uint8_t n );
 
 int blink1_setRGB(hid_device *dev, uint8_t r, uint8_t g, uint8_t b );
 
@@ -60,11 +62,11 @@ int blink1_serialnumwrite(hid_device *dev, uint8_t* serialnumstr);
 int blink1_serverdown(hid_device *dev, uint8_t on, uint16_t millis);
 
 int blink1_play(hid_device *dev, uint8_t play, uint8_t pos);
-int blink1_writePatternLine(hid_device *dev, uint16_t fadeMillis, 
-                            uint8_t r, uint8_t g, uint8_t b, 
+int blink1_writePatternLine(hid_device *dev, uint16_t fadeMillis,
+                            uint8_t r, uint8_t g, uint8_t b,
                             uint8_t pos);
-int blink1_readPatternLine(hid_device *dev, uint16_t* fadeMillis, 
-                           uint8_t* r, uint8_t* g, uint8_t* b, 
+int blink1_readPatternLine(hid_device *dev, uint16_t* fadeMillis,
+                           uint8_t* r, uint8_t* g, uint8_t* b,
                            uint8_t pos);
 //int blink1_playPattern(hid_device *dev,,);
 
