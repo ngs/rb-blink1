@@ -418,6 +418,7 @@ void Init_blink1() {
   rb_define_method(klass, "close",              rb_blink1_close,            0);
   rb_define_method(klass, "version",            rb_blink1_getVersion,       0);
   rb_define_method(klass, "fade_to_rgb",        rb_blink1_fadeToRGB,        4);
+  rb_define_method(klass, "fade_to_rgbn",       rb_blink1_fadeToRGBN,       5);
   rb_define_method(klass, "set_rgb",            rb_blink1_setRGB,           3);
   rb_define_method(klass, "eeread",             rb_blink1_eeread,           1);
   rb_define_method(klass, "eewrite",            rb_blink1_eewrite,          2);
