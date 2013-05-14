@@ -87,7 +87,7 @@ extern "C" {
 			needed.  This function should be called at the beginning of
 			execution however, if there is a chance of HIDAPI handles
 			being opened by different threads simultaneously.
-			
+
 			@ingroup API
 
 			@returns
@@ -112,6 +112,8 @@ extern "C" {
 
 			This function returns a linked list of all the HID devices
 			attached to the system which match vendor_id and product_id.
+			If @p vendor_id is set to 0 then any vendor matches.
+			If @p product_id is set to 0 then any product matches.
 			If @p vendor_id and @p product_id are both set to 0, then
 			all HID devices will be returned.
 
@@ -380,4 +382,3 @@ extern "C" {
 #endif
 
 #endif
-
