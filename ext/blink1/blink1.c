@@ -232,6 +232,20 @@ static VALUE rb_blink1_fadeToRGB(VALUE self, VALUE fadeMillis, VALUE r, VALUE g,
 
 /**
  * :call-seq:
+ *   <span class="name">fade_to_rgbn</span> <span class="arguments">(fade_millis, r, g, b, n) -> integer</span>
+ *
+ * Fade a specific (blink(1) mk2) LED LED color to RGB in +fade_millis+.
+ *
+ * Return the actual number of bytes written and -1 on error.
+ */
+static VALUE rb_blink1_fadeToRGBN(VALUE self, VALUE fadeMillis, VALUE r, VALUE g, VALUE b, VALUE n) {
+  struct Blink1Instance *ins;
+  Data_Get_Struct(self, struct Blink1Instance, ins);
+  return INT2NUM(blink1_fadeToRGBN(ins->dev, FIX2UINT(fadeMillis), FIX2UINT(r), FIX2UINT(g), FIX2UINT(b), FIX2UINT(n)));
+}
+
+/**
+ * :call-seq:
  *   <span class="name">set_rgb</span> <span class="arguments">(r, g, b) -> integer</span>
  *
  * Set LED color to RGB.
