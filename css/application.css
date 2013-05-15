@@ -54,3 +54,11 @@ h1.name .type {
 #class-list a {
   font-weight: bold;
   font-size: 18px; }
+
+h1 span a, h2 span a, h3 span a {
+  font-size: 0.5em;
+  text-indent: 1em;
+  display: inline-block;
+  color: white; }
+h1:hover span a, h2:hover span a, h3:hover span a {
+  color: #888888; }
