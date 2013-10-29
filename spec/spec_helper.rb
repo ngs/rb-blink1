@@ -1,8 +1,10 @@
 require 'rubygems'
 require 'spork'
 require 'rspec'
-#uncomment the following line to use spork with the debugger
-#require 'spork/ext/ruby-debug'
+require "codeclimate-test-reporter"
+# require 'spork/ext/ruby-debug'
+
+CodeClimate::TestReporter.start
 
 Spork.prefork do; end
 
