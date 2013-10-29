@@ -2,9 +2,7 @@ language: ruby
 env: CODECLIMATE_REPO_TOKEN=ea524e4acf0abd2a5d396cc239710de238314e5bfe3af472baca56a88f7b7ec1
 rvm:
   - "1.9.3"
-  - "1.9.2"
   - rbx-19mode
-  - "1.8.7"
 before_install:
   - sudo apt-get install -qq gcc-avr avr-libc
   - sudo apt-get install -qq libusb-1.0-0-dev
