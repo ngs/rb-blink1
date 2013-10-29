@@ -3,6 +3,7 @@
 The Ruby interface for blink(1)
 
 {<img src="https://travis-ci.org/ngs/rb-blink1.png?branch=master" alt="Build Status" />}[https://travis-ci.org/ngs/rb-blink1]
+{<img src="https://codeclimate.com/repos/526fcb48f3ea00043902e584/badges/3a9917c45e31da411a36/gpa.png" />}[https://codeclimate.com/repos/526fcb48f3ea00043902e584/feed]
 
 == Install
 
