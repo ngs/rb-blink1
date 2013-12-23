@@ -14,7 +14,7 @@ require 'blink1'
 
 RSpec.configure do |config|
   if ENV['CI']
-    config.filter_run_excluding :device => true
+    config.filter_run_excluding device: true
   end
 end
 
