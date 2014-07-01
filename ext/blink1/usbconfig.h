@@ -269,8 +269,8 @@ extern void usbEventResetReady(void);
  */
 /*#define USB_CFG_SERIAL_NUMBER   'N', 'o', 'n', 'e' */
 /*#define USB_CFG_SERIAL_NUMBER_LEN   0 */
-#define USB_CFG_SERIAL_NUMBER   'N', 'o', 'n', 't','h','i','n','g'
-#define USB_CFG_SERIAL_NUMBER_LEN   8
+#define USB_CFG_SERIAL_NUMBER   'N', 'o', 'n', 't','h','i','n','g' 
+#define USB_CFG_SERIAL_NUMBER_LEN   8 
 /* Same as above for the serial number. If you don't want a serial number,
  * undefine the macros.
  * It may be useful to provide the serial number through other means than at
