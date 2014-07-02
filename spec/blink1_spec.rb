@@ -2,22 +2,36 @@ require 'spec_helper'
 
 describe Blink1 do
 
-  context 'native extention methods' do
+  describe 'native extention methods' do
 
-    it 'returns vendor_id' do
-      Blink1.vendor_id.should eql(10168)
+    describe 'vendor_id' do
+      subject { Blink1.vendor_id }
+      it { should be 10168 }
     end
 
-    it 'returns product_id' do
-      Blink1.product_id.should eql(493)
+    describe 'product_id' do
+      subject { Blink1.product_id }
+      it { should be 493 }
     end
 
   end
 
   context 'class methods', :device => true do
 
-    it 'returns list' do
-      Blink1.list.is_a?(Array).should be_true
+    describe 'list' do
+      subject { Blink1.list }
+      it { should be_a_kind_of Array }
+    end
+
+    describe 'random' do
+      subject {
+        ret = nil
+        Blink1.open do|b1|
+          ret = b1.random 20
+        end
+        ret
+      }
+      it { should be_a_kind_of Fixnum }
     end
 
   end
