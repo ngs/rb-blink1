@@ -25,8 +25,8 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rspec'
   s.add_development_dependency 'spork'
 
-  s.files        = `git ls-files`.split("\n").reject{|f| f =~ /^(\..+|Gemfile.*|Guardfile|)$/}
-  s.extensions = ["ext/blink1/extconf.rb"]
+  s.files         = `git ls-files`.split("\n").reject{|f| f =~ /^(\..+|Gemfile.*|Guardfile|)$/}
+  s.extensions    = ["ext/blink1/extconf.rb"]
   s.require_paths = ["lib", "ext"]
 end
 

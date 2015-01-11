@@ -16,7 +16,7 @@ describe Blink1 do
 
   end
 
-  context 'class methods', :device => true do
+  context 'class methods', device: true do
 
     describe 'list' do
       subject { Blink1.list }

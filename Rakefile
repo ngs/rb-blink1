@@ -2,8 +2,8 @@ require 'bundler/gem_tasks'
 require 'rdoc/task'
 require 'rspec/core/rake_task'
 
-task :default => :spec
-task :spec => :build
+task default: :spec
+task spec: :build
 
 task :build do
   Dir.chdir('ext/blink1') do
@@ -18,12 +18,10 @@ end
 RSpec::Core::RakeTask.new
 
 RDoc::Task.new do |rdoc|
-
   rdoc.rdoc_files.include("README.rdoc", "lib/**/*.rb", "ext/blink1/blink1.c")
   rdoc.generator  = 'bootstrap'
   rdoc.main       = "README.rdoc"
   rdoc.rdoc_dir   = 'html'
   rdoc.title      = 'rb-blink1'
   rdoc.options   << '--line-numbers'
-
 end
